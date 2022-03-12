@@ -4,6 +4,7 @@ import nav from './nav'
 
 export default defineUserConfig<DefaultThemeOptions>({
   // 站点配置
+  base: '/notes/',
   lang: 'zh-CN',
   title: 'CS 笔记',
   description: 'Just playing around',
