@@ -1,20 +1,18 @@
 ---
 home: true
 # heroImage: /logo.jpg
+# heroAlt: Learn Notes
 title: 首页
-heroAlt: Learn Notes
 heroText: CS Notes
-tagline: Hero subtitle
+tagline: 为了方便自己管理学习笔记，建立了这个网站，希望对大家也能有帮助。
 navbar: true
-editLink: true
-sidebar: 'auto'
-lastUpdated: true
+sidebar: "auto"
 actions:
-  - text: 快速上手
-    link: /zh/guide/getting-started.html
+  - text: 阅读笔记
+    link: /notes/
     type: primary
-  - text: 项目简介
-    link: /guide/
+  - text: 个人简介
+    link: /into/
     type: secondary
 features:
   - title: 简洁至上
