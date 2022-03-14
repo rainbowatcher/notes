@@ -1,22 +1,24 @@
 import { defineUserConfig } from "vuepress";
 import plugins from "./plugins";
-import nav from "./nav";
+import theme from "./theme";
+import markdownOptions from "./markdown"
 
 export default defineUserConfig({
   // 站点配置
   base: "/notes/",
   lang: "zh-CN",
   title: "CS 笔记",
-  description: "Just playing around",
+  description: "个人笔记项目",
+  head: [
+    ["meta", { name: "robots", content: "noindex" }],
+    ["meta", { name: "robots", content: "nofollow" }],
+    ["link", { rel: "icon", href: "logo.ico" }],
+  ],
 
   // 主题和它的配置
-  theme: "@vuepress/theme-default",
-  themeConfig: {
-    // logo: 'https://vuejs.org/images/logo.png',
-    displayAllHeaders: true,
-    navbar: nav,
-    repo: "https://github.com/with-rainbow/learn-note",
-    // repoLabel: '项目'
-  },
-  plugins: plugins
+  // theme: "@vuepress/theme-default",
+  // theme: "td",
+  themeConfig: theme,
+  markdown: markdownOptions,
+  plugins: plugins,
 });
