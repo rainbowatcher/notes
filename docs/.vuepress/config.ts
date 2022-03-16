@@ -1,7 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import plugins from "./plugins";
 import theme from "./theme";
-import markdownOptions from "./markdown"
 
 export default defineUserConfig({
   // 站点配置
@@ -14,11 +13,11 @@ export default defineUserConfig({
     ["meta", { name: "robots", content: "nofollow" }],
     ["link", { rel: "icon", href: "logo.ico" }],
   ],
-
-  // 主题和它的配置
-  // theme: "@vuepress/theme-default",
-  // theme: "td",
   themeConfig: theme,
-  markdown: markdownOptions,
+  markdown: {
+    code: {
+      lineNumbers: false,
+    },
+  },
   plugins: plugins,
 });

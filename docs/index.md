@@ -1,18 +1,14 @@
 ---
 home: true
-# heroImage: /logo.ico
-# heroAlt: Learn Notes
 title: 首页
 heroText: RW Notes
 tagline: 为了方便自己管理学习笔记，建立了这个网站，希望对大家也能有帮助。
-# navbar: true
-# sidebar: "auto"
 actions:
   - text: 阅读笔记
-    link: /notes/
+    link: /start/
     type: primary
   - text: 个人简介
-    link: /into/
+    link: /about/
     type: secondary
 # features:
 #   - title: 数据

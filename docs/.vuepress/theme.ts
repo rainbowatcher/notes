@@ -3,7 +3,6 @@ import nav from './nav'
 export default {
     // logo: '/logo.ico',
     logoDark: "",
-    // displayAllHeaders: true,
     navbar: nav,
     repo: "https://github.com/with-rainbow/notes",
     // repoLabel: '项目'

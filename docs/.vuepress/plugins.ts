@@ -1,11 +1,10 @@
-export default [
+import { PluginConfig } from "vuepress";
+import path from 'path'
+
+let pluginConfig: PluginConfig[] = [
   ["@vuepress/back-to-top"],
-  [
-    "@vuepress/docsearch",
-    {
-      apiKey: "6472aac59a1ca88e1a47b30836e251a1",
-      indexName: "Notes",
-      placeholder: "搜索文档",
-    },
-  ],
-];
+  [ path.resolve(__dirname, './plugins/vuepress-plugin-enhance') ],
+  // [ '@vuepress/last-updated']
+]
+
+export default pluginConfig;
