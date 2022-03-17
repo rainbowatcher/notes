@@ -20,26 +20,28 @@ actions:
 footer: Apache 2.0 Licensed | Copyright © 2022-present Rainbow Watcher
 ---
 
+<ClientOnly>
 <center>我会好几种 Hello World 呢！</center>
 
 <CodeGroup>
-<CodeGroupItem title="bash">
+
+  <CodeGroupItem title="bash">
 
 ```bash
 echo "hello world"
 ```
 
-</CodeGroupItem>
+  </CodeGroupItem>
 
-<CodeGroupItem title="js" active>
+  <CodeGroupItem title="js" active>
 
 ```js
 console.log("hello world");
 ```
 
-</CodeGroupItem>
+  </CodeGroupItem>
 
-<CodeGroupItem title="java">
+  <CodeGroupItem title="java">
 
 ```java
 public void main(String ...args){
@@ -47,9 +49,9 @@ public void main(String ...args){
 }
 ```
 
-</CodeGroupItem>
+  </CodeGroupItem>
 
-<CodeGroupItem title="rust">
+  <CodeGroupItem title="rust">
 
 ```rust
 fn main(){
@@ -57,14 +59,16 @@ fn main(){
 }
 ```
 
-</CodeGroupItem>
+  </CodeGroupItem>
 
-<CodeGroupItem title="python">
+  <CodeGroupItem title="python">
 
 ```python
 if __name__ == "__main__":
   print("hello world")
 ```
 
-</CodeGroupItem>
+  </CodeGroupItem>
+
 </CodeGroup>
+</ClientOnly>
