@@ -12,9 +12,8 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "vuepress": "^2.0.0-beta.36"
-  },
-  "dependencies": {
+    "vuepress": "^2.0.0-beta.36",
     "@with-rainbow/vuepress-plugin-enhance": "^0.1.0"
-  }
+  },
+  "dependencies": {}
 }
