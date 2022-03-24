@@ -1,22 +1,23 @@
 import { PluginConfig } from "vuepress";
-import path from "path";
 import { mdEnhance } from "vuepress-plugin-md-enhance";
-
+import { copyCode } from "vuepress-plugin-copy-code2";
 
 let pluginConfig: PluginConfig[] = [
   ["@vuepress/back-to-top"],
   // ["@with-rainbow/vuepress-plugin-enhance"],
-  ['@vuepress/plugin-search'],
+  ["@vuepress/plugin-search"],
+  // ['@vuepress/active-header-links'],
+  copyCode({}),
   mdEnhance({
+    enableAll: false,
     // @ts-ignore
-    mermaid: {
-      'theme': 'base'
-    },
+    codegroup: true,
+    mermaid: true,
+    footnote: true,
     tex: {
-      strict: false,
+      strict: "ignore",
     },
-    
-  })
+  }),
 ];
 
 export default pluginConfig;

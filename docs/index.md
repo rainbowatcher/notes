@@ -5,7 +5,7 @@ heroText: RW Notes
 tagline: 为了方便自己管理学习笔记，建立了这个网站，希望对大家也能有帮助。
 actions:
   - text: 阅读笔记
-    link: /#目录
+    link: /start/
     type: primary
   - text: 个人简介
     link: /about/
@@ -20,10 +20,8 @@ features:
 footer: Apache 2.0 Licensed | Copyright © 2022-present Rainbow Watcher
 ---
 
-
 # 我会好几种 Hello World 呢！
 
-<ClientOnly>
 <CodeGroup>
 <CodeGroupItem title="bash">
 
@@ -70,9 +68,8 @@ if __name__ == "__main__":
 
 </CodeGroupItem>
 </CodeGroup>
-</ClientOnly>
 
-# 目录
+<!-- # 目录
 
 - [顶置](#顶置)
 - [计算机](#计算机)
@@ -104,7 +101,7 @@ if __name__ == "__main__":
 
 ## 操作系统
 
-- [Linux](System/Linux.md)
+- [Linux](System/Linux)
 
 ## 计算机语言
 
@@ -127,5 +124,4 @@ if __name__ == "__main__":
 
 ### Bash Script
 
-## 算法
-
+## 算法 -->
