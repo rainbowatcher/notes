@@ -1,23 +1,45 @@
 import { SidebarConfigObject } from "@vuepress/theme-default";
 
 const sidebarConfig: SidebarConfigObject = {
-//   "/start": ["structure"],
-//   "/language/": ["structure"],
-//   "/system": ["structure"],
-  "/start": [{ text: "概述" }],
-  "/language/": [
+  "/start": [
     {
-      text: "计算机语言",
-      link: "/language/",
-      children: [
-        {
-          text: "HTML",
-          link: "/language/html/",
-        },
-      ],
-    },
+      "text": "概述"
+    }
   ],
-  "/system": [{ text: "系统", link: "/system" }],
+  "/language": [
+    {
+      "text": "语言",
+      "children": [
+        {
+          "text": "Html",
+          "link": "/language/html"
+        },
+        {
+          "text": "Typescript",
+          "link": "/language/typescript"
+        }
+      ]
+    }
+  ],
+  "/computer": [
+    {
+      "text": "计算机",
+      "children": [
+        "/computer/numbers.md"
+      ]
+    }
+  ],
+  "/system": [
+    {
+      "text": "系统",
+      "children": [
+        {
+          "text": "Linux",
+          "link": "/system/linux"
+        }
+      ]
+    }
+  ]
 };
 
 export default sidebarConfig;
