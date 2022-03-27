@@ -1,7 +1,8 @@
 ---
 home: true
-title: 首页
-heroText: RW Notes
+title: 笔记啦
+
+heroText: Notes
 tagline: 为了方便自己管理学习笔记，建立了这个网站，希望对大家也能有帮助。
 actions:
   - text: 阅读笔记
@@ -12,11 +13,11 @@ actions:
     type: secondary
 features:
   - title: 不要追求完美
-    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+    details: 能使用稳定版的，不要使用beta版，不要为了尝鲜花费太多时间。
   - title: 不要追求完美
-    details: 享受 Vue 的开发体验，可以在 Markdown 中使用 Vue 组件，又可以使用 Vue 来开发自定义主题。
+    details: 不要造轮子呀，不要想着造轮子。
   - title: 不要追求完美
-    details: VuePress 会为每个页面预渲染生成静态的 HTML，同时，每个页面被加载的时候，将作为 SPA 运行。
+    details: 不要急于求成。
 footer: Apache 2.0 Licensed | Copyright © 2022-present Rainbow Watcher
 ---
 
