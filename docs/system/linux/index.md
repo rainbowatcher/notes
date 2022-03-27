@@ -1,7 +1,7 @@
 # Linux
 
-- [概述](概述.md)
-- [安装](安装.md)
-- [常用命令](常用命令.md)
-- [系统管理](系统管理.md)
-- [Shell 编程](Shell编程.md)
+- [概述](intro.md)
+- [安装](install.md)
+- [常用命令](command.md)
+- [系统管理](system-manage.md)
+- [Shell 编程](shell.md)

@@ -1,45 +1,39 @@
-import { SidebarConfigObject } from "@vuepress/theme-default";
-
-const sidebarConfig: SidebarConfigObject = {
-  "/start": [
-    {
-      "text": "概述"
-    }
-  ],
+export default {
   "/language": [
     {
-      "text": "语言",
+      "text": "Html",
+      "link": "/language/html",
+      "collapsible": true,
       "children": [
-        {
-          "text": "Html",
-          "link": "/language/html"
-        },
-        {
-          "text": "Typescript",
-          "link": "/language/typescript"
-        }
+        "/language/html/common-attr.md",
+        "/language/html/intro.md",
+        "/language/html/label.md"
+      ]
+    },
+    {
+      "text": "Typescript",
+      "link": "/language/typescript",
+      "collapsible": true,
+      "children": [
+        "/language/typescript/skill.md"
       ]
     }
   ],
   "/computer": [
-    {
-      "text": "计算机",
-      "children": [
-        "/computer/numbers.md"
-      ]
-    }
+    "/computer/numbers.md"
   ],
   "/system": [
     {
-      "text": "系统",
+      "text": "Linux",
+      "link": "/system/linux",
+      "collapsible": true,
       "children": [
-        {
-          "text": "Linux",
-          "link": "/system/linux"
-        }
+        "/system/linux/command.md",
+        "/system/linux/install.md",
+        "/system/linux/intro.md",
+        "/system/linux/shell.md",
+        "/system/linux/system-manage.md"
       ]
     }
   ]
 };
-
-export default sidebarConfig;

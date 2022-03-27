@@ -13,12 +13,13 @@ interface SideRoute {
   [k: string]: string;
 }
 
-const include: SideRoute = {
-  start: "概述",
-  language: "语言",
-  computer: "计算机",
-  system: "系统",
-};
+// const include: SideRoute = {
+//   language: "语言",
+//   computer: "计算机",
+//   system: "系统",
+// };
+
+const include = ["language", "computer", "system"];
 
 const log = (...msg: any) => {
   console.log(...msg);
@@ -27,50 +28,53 @@ const log = (...msg: any) => {
 const SIDE_CONFIG_PATH = path.resolve(__dirname, "docs/.vuepress/sidebar.ts");
 const DOCS_PATH = path.resolve(__dirname, "docs");
 const DEFAULT_IGNORED_DIRS = [".vuepress"];
-const DEFAULT_IGNORED_FILES = [".DS_Store"];
+const DEFAULT_IGNORED_FILES = [".DS_Store", "index.md", "README.md"];
 
-// log(initSidebarConfigObject());
 
 let config_object: SidebarConfigObject = initSidebarConfigObject();
-console.debug("Init: " + JSON.stringify(config_object, null, 2));
 let keys = Object.keys(config_object);
 keys.forEach((val) => {
-  getConfigArray(val, config_object[val]);
+  Object.assign(config_object[val], getConfigArray(val));
 });
-console.debug("Result: " + JSON.stringify(config_object, null, 4));
-const content = `import { SidebarConfigObject } from "@vuepress/theme-default";
-
-const sidebarConfig: SidebarConfigObject = ${JSON.stringify(config_object, null, 2)};
-
-export default sidebarConfig;
+const content = `export default ${JSON.stringify(config_object, null, 2)};
 `;
+log(content);
 fs.writeFileSync(SIDE_CONFIG_PATH, content);
-log("sidebar file generated success!")
+log("sidebar file generated success!");
 
+/**
+ * 根据给定配置初始化配置对象
+ */
 function initSidebarConfigObject(): SidebarConfigObject {
   let obj: { [k: string]: SidebarConfigArray } = {};
   Object.entries(include).map((entry: [string, string]) => {
-    let [key, value] = entry;
+    let key: string, value: string = "";
+
+    if (include instanceof Array) {
+      key = entry[1];
+    } else {
+      [key, value] = entry;
+    }
+
     if (!key.startsWith("/")) {
       key = "/".concat(key);
     }
 
-    obj[key] = [{ text: value }];
+    obj[key] = [value];
   });
   return obj;
 }
 
-function getConfigArray(
-  dir: string,
-  arr: SidebarConfigArray
-): SidebarConfigArray {
+function getConfigArray(dir: string): SidebarConfigArray {
+  let arr: SidebarConfigArray = [];
   const parentDirName = dir;
   let absFilePath = path.join(DOCS_PATH, parentDirName);
   absFilePath = tryGetMDFileName(absFilePath);
 
   const stat = fs.statSync(absFilePath);
   if (stat.isDirectory()) {
-    (arr[0] as SidebarGroupCollapsible).children = getChildren(parentDirName);
+    arr = getChildren(parentDirName);
+    // (arr[0] as SidebarGroupCollapsible).children = getChildren(parentDirName);
   }
   return arr;
 }
@@ -83,18 +87,25 @@ function getChildren(
   });
   return files
     .filter(
-      (file) => !DEFAULT_IGNORED_FILES.concat("index.md").includes(file.name)
+      (file) =>
+        !DEFAULT_IGNORED_FILES.find(
+          (val) => val.toLowerCase() === file.name.toLowerCase()
+        )
     )
     .map((file) => {
       if (file.isDirectory()) {
         return {
           text: camelize(file.name),
           link: path.resolve(parentDirName, file.name),
+          collapsible: true,
+          children: getChildren(path.join(parentDirName, file.name)),
         };
       } else {
         return path.join(parentDirName, file.name);
       }
-    });
+      // TODO 排序问题
+    })
+    .sort((a, b) => 1);
 }
 
 function tryGetMDFileName(filePath: string): string {

@@ -1,7 +1,7 @@
 export default [
   {
     text: "操作系统",
-    children: [{ text: "Linux", link: "/system/" }],
+    link: "/system/",
   },
   {
     text: "语言",
