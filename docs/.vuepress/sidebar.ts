@@ -17,7 +17,8 @@ export default {
       "link": "/language/javascript",
       "collapsible": true,
       "children": [
-        "/language/javascript/intro.md"
+        "/language/javascript/00-intro.md",
+        "/language/javascript/es6.md"
       ]
     },
     {
