@@ -32,19 +32,19 @@ export default {
       "collapsible": true,
       "children": [
         {
+          "text": "CSS",
+          "link": "/language/marked-lang/css",
+          "collapsible": true,
+          "children": []
+        },
+        {
           "text": "HTML",
           "link": "/language/marked-lang/html",
           "collapsible": true,
           "children": [
             "/language/marked-lang/html/00-intro.md",
             "/language/marked-lang/html/01-common-attr.md",
-            "/language/marked-lang/html/02-label.md",
-            {
-              "text": "CSS",
-              "link": "/language/marked-lang/html/css",
-              "collapsible": true,
-              "children": []
-            }
+            "/language/marked-lang/html/02-label.md"
           ]
         },
         {
@@ -73,11 +73,11 @@ export default {
       "link": "/system/linux",
       "collapsible": true,
       "children": [
-        "/system/linux/command.md",
-        "/system/linux/install.md",
-        "/system/linux/intro.md",
-        "/system/linux/shell.md",
-        "/system/linux/system-manage.md"
+        "/system/linux/00-intro.md",
+        "/system/linux/01-install.md",
+        "/system/linux/02-command.md",
+        "/system/linux/03-system-manage.md",
+        "/system/linux/04-shell.md"
       ]
     }
   ],

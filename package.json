@@ -9,8 +9,8 @@
   "private": false,
   "scripts": {
     "setup": "ts-node setup.ts",
-    "docs:dev": "ts-node setup.ts && vuepress dev docs",
-    "docs:build": "ts-node setup.ts && vuepress build docs"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "devDependencies": {
     "@vuepress/plugin-search": "^2.0.0-beta.36",
