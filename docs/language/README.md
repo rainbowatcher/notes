@@ -14,25 +14,25 @@
 
 下面先从前端开始，HTML和CSS只是一种标记语言，主要用来描述页面，学会常用语法即可。
 
-[HTML](./html/index.md)
+[HTML](./html/README.md)
 
-[CSS](https://www.wolai.com/kYF449YNjhGBveC9Df1dUz)
+[CSS](./css/README.md)
 
 JavaScript是一门即时编译的语言，也是动态类型的语言。TypeScript 是JavaScript的超集，可以为开发人员提供完善的类型提示。
 
 ## 脚本
 
-[JavaScript](https://www.wolai.com/dYWxgKBXnTq6AqDBaVLaBW)
+[JavaScript](./javascript/README.md)
 
-[TypeScript](https://www.wolai.com/8bqTV2o3wPHxCpTTTJ3HpA)
+[TypeScript](./typescript/README.md)
 
 下面是基于JVM(Java Virtual Machine)的静态类型语言。
 
 ## 高级语言
 
-[Java](https://www.wolai.com/w482gaHw7zBf9GJqTFy5Jd)
+[Java](./java/README.md)
 
-[Kotlin](https://www.wolai.com/rR8ZkdGzSo5vMVP9shw4ET)
+[Kotlin](./kotlin/README.md)
 
 Markdown也是一门标记语言，主要用来做说明页面，或者笔记，是写简单页面的效率神器。
 
