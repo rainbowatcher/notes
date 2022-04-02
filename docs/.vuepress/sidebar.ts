@@ -45,7 +45,8 @@ export default {
           "children": [
             "/language/marked-lang/html/00-intro.md",
             "/language/marked-lang/html/01-common-attr.md",
-            "/language/marked-lang/html/02-label.md"
+            "/language/marked-lang/html/02-text-tags.md",
+            "/language/marked-lang/html/03-interactive-tags.md"
           ]
         },
         {
