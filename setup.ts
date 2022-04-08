@@ -102,7 +102,13 @@ function getChildren(
         return relativePath;
       }
     })
-    .sort((a, b) => Number(a as string) - Number(b as string));
+    .sort((a, b) => {
+      if (a.link) {
+        return 1;
+      } else {
+        return (a as string).localeCompare(b as string);
+      }
+    });
 }
 
 function tryGetMDFileName(filePath: string): string {

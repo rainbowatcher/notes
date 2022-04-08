@@ -7,6 +7,18 @@ export default {
       "children": []
     },
     {
+      "text": "C",
+      "link": "/language/c-lang",
+      "collapsible": true,
+      "children": []
+    },
+    {
+      "text": "C++",
+      "link": "/language/cpp",
+      "collapsible": true,
+      "children": []
+    },
+    {
       "text": "Java",
       "link": "/language/java",
       "collapsible": true,
@@ -54,8 +66,20 @@ export default {
           "link": "/language/marked-lang/markdown",
           "collapsible": true,
           "children": []
+        },
+        {
+          "text": "Tex",
+          "link": "/language/marked-lang/tex",
+          "collapsible": true,
+          "children": []
         }
       ]
+    },
+    {
+      "text": "Python",
+      "link": "/language/python",
+      "collapsible": true,
+      "children": []
     },
     {
       "text": "TypeScript",
