@@ -7,6 +7,18 @@ export default {
       "children": []
     },
     {
+      "text": "C",
+      "link": "/language/c-lang",
+      "collapsible": true,
+      "children": []
+    },
+    {
+      "text": "C++",
+      "link": "/language/cpp",
+      "collapsible": true,
+      "children": []
+    },
+    {
       "text": "Java",
       "link": "/language/java",
       "collapsible": true,
@@ -17,7 +29,8 @@ export default {
       "link": "/language/javascript",
       "collapsible": true,
       "children": [
-        "/language/javascript/intro.md"
+        "/language/javascript/00-intro.md",
+        "/language/javascript/es6.md"
       ]
     },
     {
@@ -44,7 +57,8 @@ export default {
           "children": [
             "/language/marked-lang/html/00-intro.md",
             "/language/marked-lang/html/01-common-attr.md",
-            "/language/marked-lang/html/02-label.md"
+            "/language/marked-lang/html/02-text-tags.md",
+            "/language/marked-lang/html/03-interactive-tags.md"
           ]
         },
         {
@@ -52,8 +66,20 @@ export default {
           "link": "/language/marked-lang/markdown",
           "collapsible": true,
           "children": []
+        },
+        {
+          "text": "Tex",
+          "link": "/language/marked-lang/tex",
+          "collapsible": true,
+          "children": []
         }
       ]
+    },
+    {
+      "text": "Python",
+      "link": "/language/python",
+      "collapsible": true,
+      "children": []
     },
     {
       "text": "TypeScript",

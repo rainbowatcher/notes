@@ -11,6 +11,7 @@ let pluginConfig: PluginConfig[] = [
   mdEnhance({
     enableAll: false,
     // @ts-ignore
+    container: true,
     codegroup: true,
     mermaid: true,
     footnote: true,
