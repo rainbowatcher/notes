@@ -9,7 +9,7 @@ export default {
       ]
     },
     {
-      "text": "Engineering",
+      "text": "软件工程",
       "link": "/computer/engineering",
       "collapsible": true,
       "children": []
@@ -62,35 +62,35 @@ export default {
     },
     {
       "text": "标记语言",
-      "link": "/language/marked-lang",
+      "link": "/language/markup-lang",
       "collapsible": true,
       "children": [
         {
           "text": "CSS",
-          "link": "/language/marked-lang/css",
+          "link": "/language/markup-lang/css",
           "collapsible": true,
           "children": []
         },
         {
           "text": "HTML",
-          "link": "/language/marked-lang/html",
+          "link": "/language/markup-lang/html",
           "collapsible": true,
           "children": [
-            "/language/marked-lang/html/00-intro.md",
-            "/language/marked-lang/html/01-common-attr.md",
-            "/language/marked-lang/html/02-text-tags.md",
-            "/language/marked-lang/html/03-interactive-tags.md"
+            "/language/markup-lang/html/00-intro.md",
+            "/language/markup-lang/html/01-common-attr.md",
+            "/language/markup-lang/html/02-text-tags.md",
+            "/language/markup-lang/html/03-interactive-tags.md"
           ]
         },
         {
           "text": "Markdown",
-          "link": "/language/marked-lang/markdown",
+          "link": "/language/markup-lang/markdown",
           "collapsible": true,
           "children": []
         },
         {
           "text": "Tex",
-          "link": "/language/marked-lang/tex",
+          "link": "/language/markup-lang/tex",
           "collapsible": true,
           "children": []
         }
