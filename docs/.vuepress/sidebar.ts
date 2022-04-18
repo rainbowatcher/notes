@@ -1,97 +1,19 @@
 export default {
-  "/language": [
-    {
-      "text": "Rust",
-      "link": "/language/Rust",
-      "collapsible": true,
-      "children": []
-    },
-    {
-      "text": "C",
-      "link": "/language/c-lang",
-      "collapsible": true,
-      "children": []
-    },
-    {
-      "text": "C++",
-      "link": "/language/cpp",
-      "collapsible": true,
-      "children": []
-    },
-    {
-      "text": "Java",
-      "link": "/language/java",
-      "collapsible": true,
-      "children": []
-    },
-    {
-      "text": "JavaScript",
-      "link": "/language/javascript",
-      "collapsible": true,
-      "children": [
-        "/language/javascript/00-intro.md",
-        "/language/javascript/es6.md"
-      ]
-    },
-    {
-      "text": "Kotlin",
-      "link": "/language/kotlin",
-      "collapsible": true,
-      "children": []
-    },
-    {
-      "text": "标记语言",
-      "link": "/language/marked-lang",
-      "collapsible": true,
-      "children": [
-        {
-          "text": "CSS",
-          "link": "/language/marked-lang/css",
-          "collapsible": true,
-          "children": []
-        },
-        {
-          "text": "HTML",
-          "link": "/language/marked-lang/html",
-          "collapsible": true,
-          "children": [
-            "/language/marked-lang/html/00-intro.md",
-            "/language/marked-lang/html/01-common-attr.md",
-            "/language/marked-lang/html/02-text-tags.md",
-            "/language/marked-lang/html/03-interactive-tags.md"
-          ]
-        },
-        {
-          "text": "Markdown",
-          "link": "/language/marked-lang/markdown",
-          "collapsible": true,
-          "children": []
-        },
-        {
-          "text": "Tex",
-          "link": "/language/marked-lang/tex",
-          "collapsible": true,
-          "children": []
-        }
-      ]
-    },
-    {
-      "text": "Python",
-      "link": "/language/python",
-      "collapsible": true,
-      "children": []
-    },
-    {
-      "text": "TypeScript",
-      "link": "/language/typescript",
-      "collapsible": true,
-      "children": [
-        "/language/typescript/skill.md"
-      ]
-    }
-  ],
   "/computer": [
-    "/computer/numbers.md"
+    {
+      "text": "计算机基础",
+      "link": "/computer/basic",
+      "collapsible": true,
+      "children": [
+        "/computer/basic/numbers.md"
+      ]
+    },
+    {
+      "text": "软件工程",
+      "link": "/computer/engineering",
+      "collapsible": true,
+      "children": []
+    }
   ],
   "/system": [
     {
@@ -104,6 +26,111 @@ export default {
         "/system/linux/02-command.md",
         "/system/linux/03-system-manage.md",
         "/system/linux/04-shell.md"
+      ]
+    }
+  ],
+  "/language": [
+    {
+      "text": "动态语言",
+      "link": "/language/dynamic",
+      "collapsible": true,
+      "children": [
+        {
+          "text": "JavaScript",
+          "link": "/language/dynamic/javascript",
+          "collapsible": true,
+          "children": [
+            "/language/dynamic/javascript/00-intro.md",
+            "/language/dynamic/javascript/es6.md"
+          ]
+        },
+        {
+          "text": "Python",
+          "link": "/language/dynamic/python",
+          "collapsible": true,
+          "children": []
+        },
+        {
+          "text": "TypeScript",
+          "link": "/language/dynamic/typescript",
+          "collapsible": true,
+          "children": [
+            "/language/dynamic/typescript/skill.md"
+          ]
+        }
+      ]
+    },
+    {
+      "text": "标记语言",
+      "link": "/language/markup-lang",
+      "collapsible": true,
+      "children": [
+        {
+          "text": "CSS",
+          "link": "/language/markup-lang/css",
+          "collapsible": true,
+          "children": []
+        },
+        {
+          "text": "HTML",
+          "link": "/language/markup-lang/html",
+          "collapsible": true,
+          "children": [
+            "/language/markup-lang/html/00-intro.md",
+            "/language/markup-lang/html/01-common-attr.md",
+            "/language/markup-lang/html/02-text-tags.md",
+            "/language/markup-lang/html/03-interactive-tags.md"
+          ]
+        },
+        {
+          "text": "Markdown",
+          "link": "/language/markup-lang/markdown",
+          "collapsible": true,
+          "children": []
+        },
+        {
+          "text": "Tex",
+          "link": "/language/markup-lang/tex",
+          "collapsible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "静态语言",
+      "link": "/language/static",
+      "collapsible": true,
+      "children": [
+        {
+          "text": "C",
+          "link": "/language/static/c-lang",
+          "collapsible": true,
+          "children": []
+        },
+        {
+          "text": "C++",
+          "link": "/language/static/cpp",
+          "collapsible": true,
+          "children": []
+        },
+        {
+          "text": "Java",
+          "link": "/language/static/java",
+          "collapsible": true,
+          "children": []
+        },
+        {
+          "text": "Kotlin",
+          "link": "/language/static/kotlin",
+          "collapsible": true,
+          "children": []
+        },
+        {
+          "text": "Rust",
+          "link": "/language/static/rust",
+          "collapsible": true,
+          "children": []
+        }
       ]
     }
   ],
@@ -135,5 +162,6 @@ export default {
         }
       ]
     }
-  ]
+  ],
+  "/algorithm": []
 };
