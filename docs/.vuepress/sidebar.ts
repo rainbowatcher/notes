@@ -1,43 +1,64 @@
 export default {
-  "/language": [
+  "/computer": [
     {
-      "text": "Rust",
-      "link": "/language/Rust",
-      "collapsible": true,
-      "children": []
-    },
-    {
-      "text": "C",
-      "link": "/language/c-lang",
-      "collapsible": true,
-      "children": []
-    },
-    {
-      "text": "C++",
-      "link": "/language/cpp",
-      "collapsible": true,
-      "children": []
-    },
-    {
-      "text": "Java",
-      "link": "/language/java",
-      "collapsible": true,
-      "children": []
-    },
-    {
-      "text": "JavaScript",
-      "link": "/language/javascript",
+      "text": "计算机基础",
+      "link": "/computer/basic",
       "collapsible": true,
       "children": [
-        "/language/javascript/00-intro.md",
-        "/language/javascript/es6.md"
+        "/computer/basic/numbers.md"
       ]
     },
     {
-      "text": "Kotlin",
-      "link": "/language/kotlin",
+      "text": "Engineering",
+      "link": "/computer/engineering",
       "collapsible": true,
       "children": []
+    }
+  ],
+  "/system": [
+    {
+      "text": "Linux",
+      "link": "/system/linux",
+      "collapsible": true,
+      "children": [
+        "/system/linux/00-intro.md",
+        "/system/linux/01-install.md",
+        "/system/linux/02-command.md",
+        "/system/linux/03-system-manage.md",
+        "/system/linux/04-shell.md"
+      ]
+    }
+  ],
+  "/language": [
+    {
+      "text": "动态语言",
+      "link": "/language/dynamic",
+      "collapsible": true,
+      "children": [
+        {
+          "text": "JavaScript",
+          "link": "/language/dynamic/javascript",
+          "collapsible": true,
+          "children": [
+            "/language/dynamic/javascript/00-intro.md",
+            "/language/dynamic/javascript/es6.md"
+          ]
+        },
+        {
+          "text": "Python",
+          "link": "/language/dynamic/python",
+          "collapsible": true,
+          "children": []
+        },
+        {
+          "text": "TypeScript",
+          "link": "/language/dynamic/typescript",
+          "collapsible": true,
+          "children": [
+            "/language/dynamic/typescript/skill.md"
+          ]
+        }
+      ]
     },
     {
       "text": "标记语言",
@@ -76,34 +97,40 @@ export default {
       ]
     },
     {
-      "text": "Python",
-      "link": "/language/python",
-      "collapsible": true,
-      "children": []
-    },
-    {
-      "text": "TypeScript",
-      "link": "/language/typescript",
+      "text": "静态语言",
+      "link": "/language/static",
       "collapsible": true,
       "children": [
-        "/language/typescript/skill.md"
-      ]
-    }
-  ],
-  "/computer": [
-    "/computer/numbers.md"
-  ],
-  "/system": [
-    {
-      "text": "Linux",
-      "link": "/system/linux",
-      "collapsible": true,
-      "children": [
-        "/system/linux/00-intro.md",
-        "/system/linux/01-install.md",
-        "/system/linux/02-command.md",
-        "/system/linux/03-system-manage.md",
-        "/system/linux/04-shell.md"
+        {
+          "text": "C",
+          "link": "/language/static/c-lang",
+          "collapsible": true,
+          "children": []
+        },
+        {
+          "text": "C++",
+          "link": "/language/static/cpp",
+          "collapsible": true,
+          "children": []
+        },
+        {
+          "text": "Java",
+          "link": "/language/static/java",
+          "collapsible": true,
+          "children": []
+        },
+        {
+          "text": "Kotlin",
+          "link": "/language/static/kotlin",
+          "collapsible": true,
+          "children": []
+        },
+        {
+          "text": "Rust",
+          "link": "/language/static/rust",
+          "collapsible": true,
+          "children": []
+        }
       ]
     }
   ],
@@ -135,5 +162,6 @@ export default {
         }
       ]
     }
-  ]
+  ],
+  "/algorithm": []
 };

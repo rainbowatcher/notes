@@ -6,7 +6,7 @@ heroText: Notes
 tagline: 为了方便自己管理学习笔记，建立了这个网站，希望对大家也能有帮助。
 actions:
   - text: 阅读笔记
-    link: /start/
+    link: /computer/
     type: primary
   - text: 个人简介
     link: /about/
@@ -21,7 +21,7 @@ features:
 footer: Apache 2.0 Licensed | Copyright © 2022-present Rainbow Watcher
 ---
 
-# 我会好几种 Hello World 呢！
+<!-- # 我会好几种 Hello World 呢！
 
 <CodeGroup>
 <CodeGroupItem title="bash">
@@ -68,61 +68,24 @@ if __name__ == "__main__":
 ```
 
 </CodeGroupItem>
-</CodeGroup>
+</CodeGroup> -->
 
-<!-- # 目录
+# 概述
 
-- [顶置](#顶置)
-- [计算机](#计算机)
-- [操作系统](#操作系统)
-- [计算机语言](#计算机语言)
-  - [HTML](#html)
-  - [CSS](#css)
-  - [JavaScript](#javascript)
-  - [Java](#java)
-  - [Python](#python)
-  - [Rust](#rust)
-  - [Bash Script](#bash-script)
-- [算法](#算法)
+在计算机领域，每个人都需要花相当多的时间来学习该领域的基础知识，而且在学习的过程中经常会遇到之前学过的内容，一段时间后就会忘记，再次拾起来的过程是比较消耗时间的，为了避免这种情况出现，在这里把各个领域的知识记录下来，归纳成一个完整的知识网络。
 
-## 顶置
+## 推荐
 
-- [CS-Notes](https://github.com/CyC2018/CS-Notes)
-  ![](https://img.shields.io/github/stars/CyC2018/CS-Notes)
-- [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN)
-  ![](https://img.shields.io/github/stars/justjavac/free-programming-books-zh_CN)
-- [反向面试](https://github.com/yifeikong/reverse-interview-zh)
-  ![](https://img.shields.io/github/stars/yifeikong/reverse-interview-zh)
-- [大数据入门指南](https://github.com/heibaiying/BigData-Notes)
-  ![](https://img.shields.io/github/stars/heibaiying/BigData-Notes)
+### 在线工具
 
-## 计算机
+- [菜鸟在线工具集](https://c.runoob.com/)
+- [Tabnine 代码案例搜索](https://www.tabnine.com/code)
 
-- [计算机组成与体系结构](Computer/计算机组成与体系结构.md)
+## 大纲
 
-## 操作系统
+笔记包含哪些内容
 
-- [Linux](System/Linux)
 
-## 计算机语言
+## 未来
 
-### HTML
-
-- [HTML](Language/HTML/HTML.md)
-- [HTML 简介](Language/HTML/HTML%20简介.md)
-- [文本标签](Language/HTML/文本标签.md)
-- [标签共有属性](Language/HTML/标签共有属性.md)
-
-### CSS
-
-### JavaScript
-
-### Java
-
-### Python
-
-### Rust
-
-### Bash Script
-
-## 算法 -->
+将要添加的内容

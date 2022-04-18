@@ -17,16 +17,16 @@
 <h6>六级标题</h6>
 ```
 
-效果：
+::: note 效果演示
 
-<div class="code-preview">
-  <h1>一级标题</h1>
-  <h2>二级标题</h2>
-  <h3>三级标题</h3>
-  <h4>四级标题</h4>
-  <h5>五级标题</h5>
-  <h6>六级标题</h6>
-</div>
+<h1>一级标题</h1>
+<h2>二级标题</h2>
+<h3>三级标题</h3>
+<h4>四级标题</h4>
+<h5>五级标题</h5>
+<h6>六级标题</h6>
+
+:::
 
 ## 段落
 
@@ -53,11 +53,11 @@
 </p>
 ```
 
-效果：
+::: note 效果演示
 
-<div class="code-preview">
 <p>You can use <abbr title="层叠样式表">CSS</abbr> to style your <abbr title="超文本标记语言">HTML</abbr>.</p>
-</div>
+
+:::
 
 ## 链接
 
@@ -65,11 +65,11 @@
 <a href="#链接">链接</a>
 ```
 
-效果：
+::: note 效果演示
 
-<div class="code-preview">
 <a href="#链接">链接</a>
-</div>
+
+:::
 
 ## 字体效果
 
@@ -95,12 +95,11 @@
 </dl>
 ```
 
-效果：
+::: note 效果演示
 
-<div class="code-preview">
 正常文本
 <b>粗体</b>
-<strong>strong和blod效果一样但是语义有区别</strong>
+<strong>strong 和 blod 效果一样但是语义有区别</strong>
 <em>斜体</em>
 代码：<code>select count(\*) from dual;</code>、
 <mark>高亮</mark>文本
@@ -113,12 +112,14 @@
 下标<sub>2</sub>
 时间：<time>2021-11-11 12:00:00</time>
 <u>下划线</u>
+
 <blockquote>引用</blockquote>
 <dl>
   <dt>定义</dt>
   <dd>描述</dd>
 </dl>
-</div>
+
+:::
 
 ## 水平线
 
@@ -126,21 +127,19 @@
 <hr />
 ```
 
-效果：
-
-<hr/>
-
 ## 列表
 
 ### 有序列表
 
 设置编号的类型：
 
-- a 表示小写英文字母编号
-- A 表示大写英文字母编号
-- i 表示小写罗马数字编号
-- I 表示大写罗马数字编号
-- 1 表示数字编号（默认）
+| 类型 | 描述                 |
+| ---- | -------------------- |
+| a    | 表示小写英文字母编号 |
+| A    | 表示大写英文字母编号 |
+| i    | 表示小写罗马数字编号 |
+| I    | 表示大写罗马数字编号 |
+| 1    | 表示数字编号（默认） |
 
 ```html
 <ol>
@@ -184,53 +183,49 @@
 </ol>
 ```
 
-<div class="code-preview">
-  <ol>
-    <li>元素1</li>
-    <li>元素2</li>
-    <li>元素3</li>
-    <li>元素4</li>
-    <li>元素5</li>
-  </ol>
-</div>
+::: note 效果演示
 
-<div class="code-preview">
-  <ol type="a">
-    <li>元素1</li>
-    <li>元素2</li>
-    <li>元素3</li>
-    <li>元素4</li>
-    <li>元素5</li>
-  </ol>
-</div>
+<ol>
+  <li>元素1</li>
+  <li>元素2</li>
+  <li>元素3</li>
+  <li>元素4</li>
+  <li>元素5</li>
+</ol>
 
-<div class="code-preview">
-  <ol type="A">
-    <li>元素1</li>
-    <li>元素2</li>
-    <li>元素3</li>
-    <li>元素4</li>
-    <li>元素5</li>
-  </ol>
-</div>
-<div class="code-preview">
-  <ol type="i">
-    <li>元素1</li>
-    <li>元素2</li>
-    <li>元素3</li>
-    <li>元素4</li>
-    <li>元素5</li>
-  </ol>
-</div>
-<div class="code-preview">
-  <ol type="I">
-    <li>元素1</li>
-    <li>元素2</li>
-    <li>元素3</li>
-    <li>元素4</li>
-    <li>元素5</li>
-  </ol>
-</div>
+<ol type="a">
+  <li>元素1</li>
+  <li>元素2</li>
+  <li>元素3</li>
+  <li>元素4</li>
+  <li>元素5</li>
+</ol>
+
+<ol type="A">
+  <li>元素1</li>
+  <li>元素2</li>
+  <li>元素3</li>
+  <li>元素4</li>
+  <li>元素5</li>
+</ol>
+
+<ol type="i">
+  <li>元素1</li>
+  <li>元素2</li>
+  <li>元素3</li>
+  <li>元素4</li>
+  <li>元素5</li>
+</ol>
+
+<ol type="I">
+  <li>元素1</li>
+  <li>元素2</li>
+  <li>元素3</li>
+  <li>元素4</li>
+  <li>元素5</li>
+</ol>
+
+:::
 
 ### 无序列表
 
@@ -283,45 +278,39 @@
 </style>
 ```
 
-<div class="code-preview">
-  <ul class="ul-circle">
-    <li>元素1</li>
-    <li>元素2</li>
-    <li>元素3</li>
-    <li>元素4</li>
-    <li>元素5</li>
-  </ul>
-</div>
+::: note 效果演示
 
-<div class="code-preview">
-  <ul class="ul-square">
-    <li>元素1</li>
-    <li>元素2</li>
-    <li>元素3</li>
-    <li>元素4</li>
-    <li>元素5</li>
-  </ul>
-</div>
+<ul class="ul-circle">
+  <li>元素1</li>
+  <li>元素2</li>
+  <li>元素3</li>
+  <li>元素4</li>
+  <li>元素5</li>
+</ul>
 
-<div class="code-preview">
-  <ul class="ul-disc">
-    <li>元素1</li>
-    <li>元素2</li>
-    <li>元素3</li>
-    <li>元素4</li>
-    <li>元素5</li>
-  </ul>
-</div>
+<ul class="ul-square">
+  <li>元素1</li>
+  <li>元素2</li>
+  <li>元素3</li>
+  <li>元素4</li>
+  <li>元素5</li>
+</ul>
 
-<div class="code-preview">
-  <ul class="ul-none">
-    <li>元素1</li>
-    <li>元素2</li>
-    <li>元素3</li>
-    <li>元素4</li>
-    <li>元素5</li>
-  </ul>
-</div>
+<ul class="ul-disc">
+  <li>元素1</li>
+  <li>元素2</li>
+  <li>元素3</li>
+  <li>元素4</li>
+  <li>元素5</li>
+</ul>
+
+<ul class="ul-none">
+  <li>元素1</li>
+  <li>元素2</li>
+  <li>元素3</li>
+  <li>元素4</li>
+  <li>元素5</li>
+</ul>
 
 <style>
   .ul-circle {
@@ -338,13 +327,19 @@
   }
 </style>
 
+:::
+
 ## 作品引用
 
 ```html
 More information can be found in <cite>[ISO-0000]</cite>.
 ```
 
+::: note 效果演示
+
 More information can be found in <cite>[ISO-0000]</cite>.
+
+:::
 
 ## 预留空白文本
 
@@ -367,7 +362,8 @@ More information can be found in <cite>[ISO-0000]</cite>.
 </figure>
 ```
 
-<div class="code-preview">
+::: note 效果演示
+
 <figure role="img" aria-labelledby="cow-caption">
   <pre>
   ___________________________
@@ -383,33 +379,8 @@ More information can be found in <cite>[ISO-0000]</cite>.
     A cow saying, "I'm an expert in my field." The cow is illustrated using preformatted text characters.
   </figcaption>
 </figure>
-</div>
 
-<!-- <iframe id="inlineFrameExample"
-    title="Inline Frame Example"
-    width="500"
-    height="300"
-    style="border: 0"
-    hidden
-    src="https://lbs.baidu.com/jsdemo/demo/aAsynLoadMap.htm">
-    <p>Your browser does not support iframes.</p>
-</iframe> -->
-
-<!-- <div class="shadowbox">
-  <p>Here's a very interesting note displayed in a
-  lovely shadowed box.</p>
-</div>
-
-<style>
-.shadowbox {
-  width: 15em;
-  /* border: 1px solid #dfd; */
-  box-shadow: 3px 6px 8px #999;
-  padding: 8px 12px;
-  border-radius: 10px;
-  background-image: linear-gradient(170deg, #dfd, #def 45%, #fed);
-}
-</style> -->
+:::
 
 ## 表格
 
@@ -441,6 +412,8 @@ More information can be found in <cite>[ISO-0000]</cite>.
 </table>
 ```
 
+::: note 效果演示
+
 <table>
   <caption>Color names and values</caption>
   <tbody>
@@ -464,6 +437,8 @@ More information can be found in <cite>[ISO-0000]</cite>.
     </tr>
   </tbody>
 </table>
+
+:::
 
 ```html
 <table>
@@ -512,6 +487,8 @@ More information can be found in <cite>[ISO-0000]</cite>.
 </style>
 ```
 
+::: note 效果演示
+
 <table>
   <caption>Superheros and sidekicks</caption>
   <tbody>
@@ -555,11 +532,4 @@ More information can be found in <cite>[ISO-0000]</cite>.
   }
 </style>
 
-<style>
-  .code-preview{
-    padding: 0.8rem 0.8rem;
-    border-radius: 0.2rem;
-    background-color: rgb(220, 220, 220, 0.15);
-    border-left: 5px solid green;
-  }
-</style>
+:::
