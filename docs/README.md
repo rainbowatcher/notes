@@ -6,7 +6,7 @@ heroText: Notes
 tagline: 为了方便自己管理学习笔记，建立了这个网站，希望对大家也能有帮助。
 actions:
   - text: 阅读笔记
-    link: /computer/
+    link: /#概述
     type: primary
   - text: 个人简介
     link: /about/
@@ -20,55 +20,6 @@ features:
     details: 不要急于求成。
 footer: Apache 2.0 Licensed | Copyright © 2022-present Rainbow Watcher
 ---
-
-<!-- # 我会好几种 Hello World 呢！
-
-<CodeGroup>
-<CodeGroupItem title="bash">
-
-```bash
-echo "hello world"
-```
-
-</CodeGroupItem>
-
-<CodeGroupItem title="js" >
-
-```js
-console.log("hello world");
-```
-
-</CodeGroupItem>
-
-<CodeGroupItem title="java">
-
-```java
-public void main(String ...args){
-  System.out.println("hello world");
-}
-```
-
-</CodeGroupItem>
-
-<CodeGroupItem title="rust" active>
-
-```rust
-fn main(){
-  println!("hello world")
-}
-```
-
-</CodeGroupItem>
-
-<CodeGroupItem title="python">
-
-```python
-if __name__ == "__main__":
-  print("hello world")
-```
-
-</CodeGroupItem>
-</CodeGroup> -->
 
 # 概述
 
@@ -84,7 +35,6 @@ if __name__ == "__main__":
 ## 大纲
 
 笔记包含哪些内容
-
 
 ## 未来
 
