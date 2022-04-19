@@ -65,7 +65,7 @@ f(); // undefined
 
 这里debug 时可以看到有两个作用域，一个是函数 f 的作用域，还有一个是全局的匿名作用域。
 
-![](../../../assets/language/javascript/function-scope.png)
+![](../../../../assets/language/javascript/function-scope.png)
 
 - **第二种场景，用来计数的循环变量泄露为全局变量。**
 
