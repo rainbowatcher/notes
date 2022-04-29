@@ -1,6 +1,7 @@
-import { defineUserConfig } from "vuepress";
+import { defineUserConfig, defaultTheme } from "vuepress";
 import plugins from "./plugins";
 import theme from "./theme";
+import nav from "./nav";
 
 export default defineUserConfig({
   // 站点配置
@@ -13,7 +14,7 @@ export default defineUserConfig({
     ["meta", { name: "robots", content: "nofollow" }],
     ["link", { rel: "icon", href: "logo.ico" }],
   ],
-  themeConfig: theme,
+  theme: defaultTheme(theme),
   markdown: {
     code: {
       lineNumbers: false,

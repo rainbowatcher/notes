@@ -1,4 +1,4 @@
-# 交互标签
+<!-- # 交互标签
 
 本章描述 html 中用户交互相关的组件
 
@@ -268,11 +268,11 @@ value
   <label for="dewey">Dewey</label>
   ```
 
-  <input type="radio" id="huey" name="drone" value="huey" checked>
-  <label for="huey">Huey</label>
-  <br/>
-  <input type="radio" id="dewey" name="drone" value="dewey">
-  <label for="dewey">Dewey</label>
+<input type="radio" id="huey" name="drone" value="huey" checked>
+<label for="huey">Huey</label>
+<br/>
+<input type="radio" id="dewey" name="drone" value="dewey">
+<label for="dewey">Dewey</label>
 
 ### 事件
 
@@ -527,4 +527,4 @@ target
     - _parent：在当前上下文的父级浏览上下文中加载，如果没有父级，则与 _self 表现一致。
     - _top：在最顶级的浏览上下文中（即当前上下文的一个没有父级的祖先浏览上下文），如果没有父级，则与 _self 表现一致。
 
-    此值可以被 `<button>`、 `<input type="submit">` 或 `<input type="image">` 元素中的 formtarget 属性覆盖。
+    此值可以被 `<button>`、 `<input type="submit">` 或 `<input type="image">` 元素中的 formtarget 属性覆盖。 -->

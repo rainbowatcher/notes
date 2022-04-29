@@ -1,12 +1,13 @@
 import { PluginConfig } from "vuepress";
 import { mdEnhance } from "vuepress-plugin-md-enhance";
 import { copyCode } from "vuepress-plugin-copy-code2";
+import backToTopPlugin from '@vuepress/plugin-back-to-top'
+import searchPlugin from '@vuepress/plugin-search'
 
-let pluginConfig: PluginConfig[] = [
-  ["@vuepress/back-to-top"],
-  // ["@with-rainbow/vuepress-plugin-enhance"],
-  ["@vuepress/plugin-search"],
-  // ['@vuepress/active-header-links'],
+
+let pluginConfig: PluginConfig = [
+  backToTopPlugin(),
+  searchPlugin({}),
   copyCode({}),
   mdEnhance({
     enableAll: false,

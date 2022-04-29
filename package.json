@@ -9,8 +9,8 @@
   "private": false,
   "scripts": {
     "setup": "ts-node setup.ts",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vuepress dev docs --clean-cache",
+    "docs:build": "vuepress build docs --clean-cache"
   },
   "devDependencies": {
     "@vuepress/plugin-search": "^2.0.0-beta.36",
