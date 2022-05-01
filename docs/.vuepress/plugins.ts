@@ -1,13 +1,12 @@
-import { PluginConfig } from "vuepress";
-import { mdEnhance } from "vuepress-plugin-md-enhance";
-import { copyCode } from "vuepress-plugin-copy-code2";
-import backToTopPlugin from '@vuepress/plugin-back-to-top'
-import searchPlugin from '@vuepress/plugin-search'
-
+import { PluginConfig } from "vuepress"
+import { mdEnhance } from "vuepress-plugin-md-enhance"
+import { copyCode } from "vuepress-plugin-copy-code2"
+import backToTopPlugin from "@vuepress/plugin-back-to-top"
+import searchPlugin from "@vuepress/plugin-search"
 
 let pluginConfig: PluginConfig = [
   backToTopPlugin(),
-  searchPlugin({}),
+  searchPlugin(),
   copyCode({}),
   mdEnhance({
     enableAll: false,
@@ -20,6 +19,6 @@ let pluginConfig: PluginConfig = [
       strict: "ignore",
     },
   }),
-];
+]
 
-export default pluginConfig;
+export default pluginConfig

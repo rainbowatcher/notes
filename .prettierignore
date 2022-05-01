@@ -1,0 +1,8 @@
+.cache
+.temp
+dist
+node_modules
+.github
+.vscode
+*.md
+*.json
