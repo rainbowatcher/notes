@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.base.json",
+  "references": [
+    "./packages/plugin-auto-navbar/tsconfig.build.json",
+  ],
+  "files": []
+}

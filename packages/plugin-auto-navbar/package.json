@@ -1,0 +1,10 @@
+{
+  "name": "@with-rainbow/plugin-auto-navbar",
+  "version": "1.0.0",
+  "main": "src/node/index.ts",
+  "author": "with-rainbow",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/core": "^1.9.7"
+  }
+}

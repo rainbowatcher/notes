@@ -1,6 +1,6 @@
 import { PluginConfig } from "vuepress"
-import { mdEnhance } from "vuepress-plugin-md-enhance"
-import { copyCode } from "vuepress-plugin-copy-code2"
+import mdEnhance from "vuepress-plugin-md-enhance"
+import copyCode from "vuepress-plugin-copy-code2"
 import backToTopPlugin from "@vuepress/plugin-back-to-top"
 import searchPlugin from "@vuepress/plugin-search"
 

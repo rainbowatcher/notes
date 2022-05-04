@@ -1,4 +1,5 @@
-import { sidebarConfig, navbarConfig } from "../../scripts/setup"
+import { sidebarConfig, navbarConfig } from "../scripts/setup"
+import { DefaultThemeOptions } from "@vuepress/theme-default"
 
 const folders = [
   "computer",
@@ -9,9 +10,9 @@ const folders = [
   "algorithm",
 ]
 
-export default {
-  // logo: '/logo.ico',
+const themeConfig: DefaultThemeOptions = {
   logoDark: "",
+  // logo: '/logo.ico',
   repo: "https://github.com/with-rainbow/notes",
   // repoLabel: '项目'
   // 编辑页面配置
@@ -33,3 +34,5 @@ export default {
   sidebar: sidebarConfig(folders),
   sidebarDepth: 1,
 }
+
+export default themeConfig
