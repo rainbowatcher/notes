@@ -18,7 +18,6 @@
     //   "vuepress-webpack": ["./packages/vuepress-webpack/src"]
     // },
     "types": [
-      "vite/client",
     ]
   },
   "include": [

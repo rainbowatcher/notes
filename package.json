@@ -9,6 +9,7 @@
   "private": false,
   "scripts": {
     "build": "tsc --build",
+    "clean": "pnpm --parallel --stream clean",
     "setup": "ts-node scripts/setup.ts",
     "docs:dev": "vuepress dev --clean-cache",
     "docs:build": "vuepress build --clean-cache",
