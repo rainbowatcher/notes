@@ -1,4 +1,4 @@
-import { sidebarConfig, navbarConfig } from "../scripts/setup"
+import { sidebarConfig, navbarConfig } from "../packages/plugin-auto-navbar"
 import { DefaultThemeOptions } from "@vuepress/theme-default"
 
 const folders = [

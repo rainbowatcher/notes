@@ -32,7 +32,7 @@ import {
   SidebarConfigArray,
 } from "@vuepress/theme-default"
 import { NavbarConfig } from "vuepress"
-import { getMDFileTitles } from "../packages/plugin-auto-navbar/src/node/mdUtil"
+import { getMDFileTitles } from "./mdUtil"
 
 const log = (...msg: any) => {
   console.log(...msg)
@@ -194,4 +194,3 @@ const navbarConfig = (folders: string[]) => {
 }
 
 export { navbarConfig, sidebarConfig }
-

@@ -1,3 +1,3 @@
-import { autoNavbarPlugin } from "./autoNavbarPlugin"
+import { navbarConfig, sidebarConfig } from "./autoNavbarPlugin"
 
-export default autoNavbarPlugin
+export  { navbarConfig, sidebarConfig }
