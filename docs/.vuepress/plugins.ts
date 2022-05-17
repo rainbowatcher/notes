@@ -1,5 +1,5 @@
-import { PluginConfig } from "vuepress";
-import mdEnhance from "vuepress-plugin-md-enhance";
+import { PluginConfig } from "vuepress"
+import mdEnhance from "vuepress-plugin-md-enhance"
 // import copyCode from "vuepress-plugin-copy-code2"
 // import { backToTopPlugin  } from "@vuepress/plugin-back-to-top"
 
@@ -25,6 +25,6 @@ let pluginConfig: PluginConfig = [
       strict: "ignore",
     },
   }),
-];
+]
 
-export default pluginConfig;
+export default pluginConfig
