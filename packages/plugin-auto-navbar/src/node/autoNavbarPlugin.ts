@@ -38,7 +38,8 @@ const log = (...msg: any) => {
   console.log(...msg)
 }
 
-const DOCS_PATH = path.resolve(__dirname, "../docs")
+// TODO 需要更好的方式获取到项目路径 need a better way to get the project root
+const DOCS_PATH = path.resolve(__dirname, "../../../../docs")
 const DEFAULT_IGNORED_DIRS = [".vuepress"]
 const HOME_PAGE_NAME = ["index.md", "README.md"]
 const DEFAULT_IGNORED_FILES = [".DS_Store", ...HOME_PAGE_NAME]
@@ -52,11 +53,11 @@ function getNavBarConfig(folders: string[]) {
     const homePageFileName = getHomePageFileName(filePath)
     const homePageFilePath = path.resolve(filePath, homePageFileName)
     const title = getMDFileTitle(homePageFilePath)
-    log(getConfigArray(value))
+    // log(getConfigArray(value))
     return {
       text: title ?? value,
       link: `/${value}/`,
-      children: getConfigArray(value),
+      // children: getConfigArray(value),
     }
   })
   return navbar_object
