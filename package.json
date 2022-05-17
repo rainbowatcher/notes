@@ -20,6 +20,7 @@
     "@vuepress/client": "2.0.0-beta.45",
     "@vuepress/plugin-search": "2.0.0-beta.45",
     "@vuepress/theme-default": "2.0.0-beta.45",
+    "mermaid": "^9.1.1",
     "tsconfig-vuepress": "^0.1.0",
     "typescript": "^4.6.4",
     "vue": "^3.2.33",
