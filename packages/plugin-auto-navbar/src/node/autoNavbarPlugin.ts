@@ -1,4 +1,4 @@
-import type { Plugin } from "@vuepress/core"
+import type { Plugin } from "@vuepress/core";
 // import { path } from "@vuepress/utils"
 
 // export interface Hooks {
@@ -23,61 +23,64 @@ import type { Plugin } from "@vuepress/core"
 //   // onInitialized:
 // })
 
-import fs from "fs"
-import path from "path"
-import markdownIt from "markdown-it"
+import fs from "fs";
+import path from "path";
+import markdownIt from "markdown-it";
 
 import {
   SidebarConfigObject,
   SidebarConfigArray,
-} from "@vuepress/theme-default"
-import { NavbarConfig } from "vuepress"
-import { getMDFileTitles } from "./mdUtil"
+} from "@vuepress/theme-default";
+import { NavbarConfig } from "vuepress";
+import { getMDFileTitles } from "./mdUtil";
 
 const log = (...msg: any) => {
-  console.log(...msg)
-}
+  console.log(...msg);
+};
 
 // TODO 需要更好的方式获取到项目路径 need a better way to get the project root
-const DOCS_PATH = path.resolve(__dirname, "../../../../docs")
-const DEFAULT_IGNORED_DIRS = [".vuepress"]
-const HOME_PAGE_NAME = ["index.md", "README.md"]
-const DEFAULT_IGNORED_FILES = [".DS_Store", ...HOME_PAGE_NAME]
+const DOCS_PATH = path.resolve(__dirname, "../../../../docs");
+const DEFAULT_IGNORED_DIRS = [".vuepress"];
+const HOME_PAGE_NAME = ["index.md", "README.md"];
+const DEFAULT_IGNORED_FILES = [".DS_Store", ...HOME_PAGE_NAME];
 
 /**
  * 获取导航栏配置对象
  */
 function getNavBarConfig(folders: string[]) {
-  let navbar_object: NavbarConfig = folders.map(value => {
-    const filePath = path.resolve(DOCS_PATH, value)
-    const homePageFileName = getHomePageFileName(filePath)
-    const homePageFilePath = path.resolve(filePath, homePageFileName)
-    const title = getMDFileTitle(homePageFilePath)
-    // log(getConfigArray(value))
-    return {
+  let navbar_object: NavbarConfig = folders.map((value) => {
+    const filePath = path.resolve(DOCS_PATH, value);
+    const homePageFileName = getHomePageFileName(filePath);
+    const homePageFilePath = path.resolve(filePath, homePageFileName);
+    const title = getMDFileTitle(homePageFilePath);
+    
+    let item = {
       text: title ?? value,
       link: `/${value}/`,
       // children: getConfigArray(value),
-    }
-  })
-  return navbar_object
+    };
+
+    log(item);
+    return item;
+  });
+  return navbar_object;
 }
 
 /**
  * 根据给定配置初始化配置对象
  */
 function initSidebarConfigObject(folders: string[]): SidebarConfigObject {
-  let configObject: { [k: string]: SidebarConfigArray } = {}
+  let configObject: { [k: string]: SidebarConfigArray } = {};
 
-  folders.map(val => {
+  folders.map((val) => {
     if (!val.startsWith("/")) {
-      val = "/".concat(val)
+      val = "/".concat(val);
     }
 
-    configObject[val] = []
-  })
+    configObject[val] = [];
+  });
 
-  return configObject
+  return configObject;
 }
 
 /**
@@ -87,62 +90,62 @@ function initSidebarConfigObject(folders: string[]): SidebarConfigObject {
  */
 function getConfigArray(dirPath: string): SidebarConfigArray {
   // 获取目录的绝对路径
-  let absFilePath = path.join(DOCS_PATH, dirPath)
+  let absFilePath = path.join(DOCS_PATH, dirPath);
   // absFilePath = tryGetMDFileName(absFilePath);
 
   // 判断是否是文件夹 只有文件夹才有子节点
   if (fs.existsSync(absFilePath) && fs.statSync(absFilePath).isDirectory()) {
-    return getChildren(dirPath, absFilePath)
+    return getChildren(dirPath, absFilePath);
   }
-  return []
+  return [];
 }
 
 function getChildren(dirPath: string, absDirPath: string): SidebarConfigArray {
   // 获取目录下的所有文件
-  const files = fs.readdirSync(absDirPath, { withFileTypes: true })
+  const files = fs.readdirSync(absDirPath, { withFileTypes: true });
   // 过滤文件
   const filtered = files.filter(
-    file =>
+    (file) =>
       !DEFAULT_IGNORED_FILES.find(
-        val => val.toLowerCase() === file.name.toLowerCase()
+        (val) => val.toLowerCase() === file.name.toLowerCase()
       )
-  )
+  );
 
-  return filtered.map(file => {
-    const relativeFilePath = path.join(dirPath, file.name)
-    const absoluteFilePath = path.join(absDirPath, file.name)
+  return filtered.map((file) => {
+    const relativeFilePath = path.join(dirPath, file.name);
+    const absoluteFilePath = path.join(absDirPath, file.name);
     if (file.isDirectory()) {
-      const homePageName = getHomePageFileName(absoluteFilePath)
-      const homePageFilePath = path.resolve(absoluteFilePath, homePageName)
-      const titles = getMDFileTitles(homePageFilePath)
+      const homePageName = getHomePageFileName(absoluteFilePath);
+      const homePageFilePath = path.resolve(absoluteFilePath, homePageName);
+      const titles = getMDFileTitles(homePageFilePath);
       // const homePageHasContent = homePageName && titles.header2.length === 0;
 
       const text =
         homePageName && titles.header1[0]
           ? titles.header1[0].content
-          : camelize(file.name)
-      const link = homePageName ? path.resolve(dirPath, file.name) : undefined
-      const collapsible = homePageName ? true : false
-      const children = getChildren(relativeFilePath, absoluteFilePath)
+          : camelize(file.name);
+      const link = homePageName ? path.resolve(dirPath, file.name) : undefined;
+      const collapsible = homePageName ? true : false;
+      const children = getChildren(relativeFilePath, absoluteFilePath);
 
       return {
         text,
         link,
         collapsible,
         children,
-      }
+      };
     } else {
-      return relativeFilePath
+      return relativeFilePath;
     }
-  })
+  });
 }
 
 function camelize(str: string) {
   return str
     .replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, _index) {
-      return word.toUpperCase()
+      return word.toUpperCase();
     })
-    .replace(/[\s-_]+/g, "")
+    .replace(/[\s-_]+/g, "");
 }
 
 /**
@@ -151,15 +154,15 @@ function camelize(str: string) {
  * @returns markdown文件解析对象
  */
 function getMDFileTitle(file: string): string {
-  let md_file = fs.readFileSync(file)
-  let m = markdownIt().parse(md_file.toString(), {})
+  let md_file = fs.readFileSync(file);
+  let m = markdownIt().parse(md_file.toString(), {});
 
-  let h1_index = m.findIndex(val => val.tag === "h1")
+  let h1_index = m.findIndex((val) => val.tag === "h1");
   if (h1_index !== -1) {
-    let h1 = m.at(h1_index + 1)
-    return h1!.content
+    let h1 = m.at(h1_index + 1);
+    return h1!.content;
   }
-  return ""
+  return "";
 }
 
 /**
@@ -169,29 +172,29 @@ function getMDFileTitle(file: string): string {
  * @returns 主页文件名
  */
 function getHomePageFileName(absDirPath: string): string {
-  let fileName = ""
-  fs.readdirSync(absDirPath, { withFileTypes: true }).forEach(file => {
-    const upperFileName = file.name.toUpperCase()
+  let fileName = "";
+  fs.readdirSync(absDirPath, { withFileTypes: true }).forEach((file) => {
+    const upperFileName = file.name.toUpperCase();
     if (
       -1 !==
-      HOME_PAGE_NAME.findIndex(val => val.toUpperCase() === upperFileName)
+      HOME_PAGE_NAME.findIndex((val) => val.toUpperCase() === upperFileName)
     ) {
-      fileName = file.name
+      fileName = file.name;
     }
-  })
-  return fileName
+  });
+  return fileName;
 }
 
 const sidebarConfig = (folders: string[]) => {
-  let sidebarConfig: SidebarConfigObject = initSidebarConfigObject(folders)
+  let sidebarConfig: SidebarConfigObject = initSidebarConfigObject(folders);
   Object.keys(sidebarConfig).map(
-    item => (sidebarConfig[item] = getConfigArray(item))
-  )
-  return sidebarConfig
-}
+    (item) => (sidebarConfig[item] = getConfigArray(item))
+  );
+  return sidebarConfig;
+};
 
 const navbarConfig = (folders: string[]) => {
-  return getNavBarConfig(folders)
-}
+  return getNavBarConfig(folders);
+};
 
-export { navbarConfig, sidebarConfig }
+export { navbarConfig, sidebarConfig };

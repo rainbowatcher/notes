@@ -13,7 +13,8 @@ export default defineUserConfig({
     ["meta", { name: "robots", content: "nofollow" }],
     ["link", { rel: "icon", href: "logo.ico" }],
   ],
-  theme: defaultTheme(theme),
+  // theme: defaultTheme({...theme}),
+  theme: theme,
   markdown: {
     code: {
       lineNumbers: true,

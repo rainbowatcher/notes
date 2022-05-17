@@ -1,5 +1,5 @@
 import { sidebarConfig, navbarConfig } from "../../packages/plugin-auto-navbar"
-import { DefaultThemeOptions } from "@vuepress/theme-default";
+import { defaultTheme } from "@vuepress/theme-default";
 
 const folders = [
   "computer",
@@ -10,9 +10,10 @@ const folders = [
   "algorithm",
 ];
 
-const themeConfig: DefaultThemeOptions = {
-  logoDark: "",
+const themeConfig = defaultTheme({
+  // logoDark: "",
   // logo: '/logo.ico',
+  home: "/notes/",
   repo: "https://github.com/with-rainbow/notes",
   // repoLabel: '项目'
   // 编辑页面配置
@@ -33,6 +34,6 @@ const themeConfig: DefaultThemeOptions = {
   navbar: navbarConfig(folders),
   sidebar: sidebarConfig(folders),
   sidebarDepth: 1,
-};
+});
 
 export default themeConfig;
