@@ -4,7 +4,7 @@ import theme from "./theme"
 
 export default defineUserConfig({
   // 站点配置
-  base: "/notes/",
+  // base: "/notes/",
   lang: "zh-CN",
   title: "CS 笔记",
   description: "个人笔记项目",
