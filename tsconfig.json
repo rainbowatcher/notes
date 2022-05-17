@@ -21,7 +21,7 @@
     ]
   },
   "include": [
-    "**/.vuepress/**/*",
+    "docs/.vuepress/**/*",
     "packages/**/*",
     "scripts/**/*"
   ],

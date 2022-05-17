@@ -16,7 +16,7 @@ export default defineUserConfig({
   theme: defaultTheme(theme),
   markdown: {
     code: {
-      lineNumbers: false,
+      lineNumbers: true,
     },
   },
   plugins: plugins,

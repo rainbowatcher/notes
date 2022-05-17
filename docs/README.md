@@ -8,8 +8,8 @@ actions:
   - text: 阅读笔记
     link: /#概述
     type: primary
-  - text: 个人简介
-    link: /about/
+  - text: 我的博客
+    link: https://blog-with-rainbow.vercel.app
     type: secondary
 features:
   - title: 不要追求完美

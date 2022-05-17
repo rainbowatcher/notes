@@ -1,13 +1,13 @@
 import { PluginConfig } from "vuepress"
 import mdEnhance from "vuepress-plugin-md-enhance"
-import copyCode from "vuepress-plugin-copy-code2"
-import backToTopPlugin from "@vuepress/plugin-back-to-top"
-import searchPlugin from "@vuepress/plugin-search"
+// import copyCode from "vuepress-plugin-copy-code2"
+// import { backToTopPlugin  } from "@vuepress/plugin-back-to-top"
 
 let pluginConfig: PluginConfig = [
-  backToTopPlugin(),
-  searchPlugin(),
-  copyCode({}),
+  // backToTopPlugin(),
+  // searchPlugin(),
+  // copyCode({}),
+  // https://vuepress-theme-hope.gitee.io/v2/md-enhance/zh/guide/
   mdEnhance({
     enableAll: false,
     // @ts-ignore
