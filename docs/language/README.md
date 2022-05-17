@@ -12,33 +12,33 @@
 
 标记语言通常用来描述页面，掌握常见用法即可。
 
-- [HTML](./marked-lang/html/README.md)
-- [CSS](./marked-lang/css/README.md)
+- [HTML](./markup-lang/html/README.md)
+- [CSS](./markup-lang/css/README.md)
 
 Markdown 也是一门标记语言，主要用来做说明页面，或者笔记，是写简单页面的效率神器。
 
-- [Markdown](./marked-lang/markdown/README.md)
-- [Tex](marked-lang/tex/README.md)
+- [Markdown](./markup-lang/markdown/README.md)
+- [Tex](./markup-lang/tex/README.md)
 
 ## 高级语言
 
 JavaScript 是一门即时编译的语言，也是动态类型的语言。TypeScript 是 JavaScript 的超集，可以为开发人员提供完善的类型提示。
 
-- [JavaScript](./javascript/README.md)
-- [TypeScript](./typescript/README.md)
-- [Python](./python/README.md)
+- [JavaScript](./dynamic/javascript/README.md)
+- [TypeScript](./dynamic/typescript/README.md)
+- [Python](./dynamic/python/README.md)
 
 下面是基于 JVM(Java Virtual Machine)的静态类型语言。
 
-- [Java](./java/README.md)
-- [Kotlin](./kotlin/README.md)
+- [Java](./static/java/README.md)
+- [Kotlin](./static/kotlin/README.md)
 - Scala :question:
 
 由于 JVM 底层基于 C 和 C++，所以掌握 JVM 需要理解 C、C++、汇编等内容。
 
-- [C](c-lang/README.md) :construction:
-- [C++](cpp/README.md) :construction:
-- [Rust](./Rust/README.md)
+- [C](./static/c-lang/README.md) :construction:
+- [C++](./static/cpp/README.md) :construction:
+- [Rust](./static/rust/README.md)
 
 ## 导读
 

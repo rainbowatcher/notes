@@ -1,10 +1,18 @@
-import nav from "./nav";
-import sidebarConfig from './sidebar'
+import { sidebarConfig, navbarConfig } from "../../packages/plugin-auto-navbar"
+import { DefaultThemeOptions } from "@vuepress/theme-default";
 
-export default {
-  // logo: '/logo.ico',
+const folders = [
+  "computer",
+  "system",
+  "language",
+  "tools",
+  "framework",
+  "algorithm",
+];
+
+const themeConfig: DefaultThemeOptions = {
   logoDark: "",
-  navbar: nav,
+  // logo: '/logo.ico',
   repo: "https://github.com/with-rainbow/notes",
   // repoLabel: '项目'
   // 编辑页面配置
@@ -22,6 +30,9 @@ export default {
   toggleDarkMode: "切换主题",
   toggleSidebar: "switch",
   notFound: ["页面走丢了", "没发现你要的页面", "没找到呢"],
-  sidebar: sidebarConfig,
+  navbar: navbarConfig(folders),
+  sidebar: sidebarConfig(folders),
   sidebarDepth: 1,
-}
+};
+
+export default themeConfig;

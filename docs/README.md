@@ -8,18 +8,22 @@ actions:
   - text: 阅读笔记
     link: /#概述
     type: primary
-  - text: 个人简介
-    link: /about/
+  - text: 我的博客
+    link: https://blog-with-rainbow.vercel.app
     type: secondary
 features:
   - title: 不要追求完美
-    details: 能使用稳定版的，不要使用beta版，不要为了尝鲜花费太多时间。
+    details: 能使用稳定版的，不要使用beta版，费时间。
   - title: 不要追求完美
-    details: 不要造轮子呀，不要想着造轮子。
+    details: 老想着造轮子是不行的。
   - title: 不要追求完美
     details: 不要急于求成。
 footer: Apache 2.0 Licensed | Copyright © 2022-present Rainbow Watcher
 ---
+
+> 笔记是对博客、以及阅读过的书中内容的整理和归纳。
+
+<!-- more -->
 
 # 概述
 

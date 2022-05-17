@@ -2,4 +2,4 @@
 
 ## 概述
 
-常见的操作系统有Windows、macOS、Linux、Android、IOS几种。
+常见的操作系统有 Windows、macOS、Linux、Android、IOS 几种。
