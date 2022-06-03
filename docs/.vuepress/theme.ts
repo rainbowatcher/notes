@@ -36,7 +36,7 @@ const themeConfig = defaultTheme({
   // navbar: navbarConfig(folders),
   navbar: navbarConfig,
   sidebar: autoSidebarConfig({}),
-  sidebarDepth: 1,
+  sidebarDepth: 2,
 });
 
 export default themeConfig;
