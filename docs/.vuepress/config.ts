@@ -1,13 +1,12 @@
-import { defineUserConfig, defaultTheme } from "vuepress"
+import { defineUserConfig } from "vuepress"
 import plugins from "./plugins"
 import theme from "./theme"
 
 export default defineUserConfig({
-  // 站点配置
-  // base: "/notes/",
+  // base: "/docs/",
   lang: "zh-CN",
-  title: "CS 笔记",
-  description: "个人笔记项目",
+  title: "Rainbow Notes",
+  description: "看彩虹的人的个人笔记",
   head: [
     ["meta", { name: "robots", content: "noindex" }],
     ["meta", { name: "robots", content: "nofollow" }],

@@ -13,6 +13,15 @@ export default [
     ],
   },
   {
+    text: "系统",
+    children: [
+      {
+        text: "Linux",
+        link: "/system/linux",
+      },
+    ],
+  },
+  {
     text: "语言",
     children: [
       {
@@ -61,6 +70,63 @@ export default [
           },
         ],
       },
+      {
+        text: "动态类型语言",
+        children: [
+          {
+            text: "Javascript",
+            link: "/language/dynamic/javascript",
+          },
+          {
+            text: "Typescript",
+            link: "/language/dynamic/typescript",
+          },
+          {
+            text: "Python",
+            link: "/language/dynamic/python",
+          },
+        ],
+      },
     ],
   },
-]
+  {
+    text: "开发框架",
+    children: [
+      {
+        text: "前端",
+        children: [
+          {
+            text: "Vue",
+            link: "/framework/front-end/vue",
+          },
+        ],
+      },
+      {
+        text: "后端",
+        children: [],
+      },
+    ],
+  },
+  {
+    text: "算法",
+    children: [
+      {
+        text: "数据结构",
+        link: "/algorithm/data-structure",
+      },
+    ],
+  },
+  {
+    text: "开发工具",
+    children: [
+      {
+        text: "Docker",
+        link: "/tools/docker",
+      },
+      {
+        text: "Git",
+        link: "/tools/git",
+      },
+    ],
+  },
+];

@@ -1,5 +1,7 @@
-import { sidebarConfig, navbarConfig } from "../../packages/plugin-auto-navbar"
+// import { sidebarConfig, navbarConfig } from "./utils/sideBar"
+import navbarConfig from "./nav";
 import { defaultTheme } from "@vuepress/theme-default";
+import { autoSidebarConfig } from "./utils/autoSidebarConfig";
 
 const folders = [
   "computer",
@@ -13,7 +15,7 @@ const folders = [
 const themeConfig = defaultTheme({
   // logoDark: "",
   // logo: '/logo.ico',
-  home: "/notes/",
+  home: "/",
   repo: "https://github.com/with-rainbow/notes",
   // repoLabel: '项目'
   // 编辑页面配置
@@ -31,8 +33,9 @@ const themeConfig = defaultTheme({
   toggleDarkMode: "切换主题",
   toggleSidebar: "switch",
   notFound: ["页面走丢了", "没发现你要的页面", "没找到呢"],
-  navbar: navbarConfig(folders),
-  sidebar: sidebarConfig(folders),
+  // navbar: navbarConfig(folders),
+  navbar: navbarConfig,
+  sidebar: autoSidebarConfig({}),
   sidebarDepth: 1,
 });
 
