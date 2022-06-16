@@ -4,11 +4,11 @@ export default [
     children: [
       {
         text: "计算机基础",
-        link: "/computer/basic",
+        link: "/computer/basic/",
       },
       {
         text: "软件工程",
-        link: "/computer/engineering",
+        link: "/computer/engineering/",
       },
     ],
   },
@@ -17,7 +17,7 @@ export default [
     children: [
       {
         text: "Linux",
-        link: "/system/linux",
+        link: "/system/linux/",
       },
     ],
   },
@@ -29,19 +29,19 @@ export default [
         children: [
           {
             text: "HTML",
-            link: "/language/markup-lang/html",
+            link: "/language/markup-lang/html/",
           },
           {
             text: "CSS",
-            link: "/language/markup-lang/css",
+            link: "/language/markup-lang/css/",
           },
           {
             text: "Markdown",
-            link: "/language/markup-lang/markdown",
+            link: "/language/markup-lang/markdown/",
           },
           // {
           //   text: "Tex",
-          //   link: "/language/markup-lang/tex"
+          //   link: "/language/markup-lang/tex/"
           // },
         ],
       },
@@ -50,23 +50,23 @@ export default [
         children: [
           {
             text: "C",
-            link: "/language/static/c-lang",
+            link: "/language/static/c-lang/",
           },
           {
             text: "C++",
-            link: "/language/static/cpp",
+            link: "/language/static/cpp/",
           },
           {
             text: "Java",
-            link: "/language/static/java",
+            link: "/language/static/java/",
           },
           {
             text: "Kotlin",
-            link: "/language/static/kotlin",
+            link: "/language/static/kotlin/",
           },
           {
             text: "Rust",
-            link: "/language/static/rust",
+            link: "/language/static/rust/",
           },
         ],
       },
@@ -75,15 +75,15 @@ export default [
         children: [
           {
             text: "Javascript",
-            link: "/language/dynamic/javascript",
+            link: "/language/dynamic/javascript/",
           },
           {
             text: "Typescript",
-            link: "/language/dynamic/typescript",
+            link: "/language/dynamic/typescript/",
           },
           {
             text: "Python",
-            link: "/language/dynamic/python",
+            link: "/language/dynamic/python/",
           },
         ],
       },
@@ -97,7 +97,7 @@ export default [
         children: [
           {
             text: "Vue",
-            link: "/framework/front-end/vue",
+            link: "/framework/front-end/vue/",
           },
         ],
       },
@@ -112,7 +112,7 @@ export default [
     children: [
       {
         text: "数据结构",
-        link: "/algorithm/data-structure",
+        link: "/algorithm/data-structure/",
       },
     ],
   },
@@ -121,11 +121,11 @@ export default [
     children: [
       {
         text: "Docker",
-        link: "/tools/docker",
+        link: "/tools/docker/",
       },
       {
         text: "Git",
-        link: "/tools/git",
+        link: "/tools/git/",
       },
     ],
   },
