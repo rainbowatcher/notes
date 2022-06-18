@@ -10,6 +10,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs --clean-cache",
     "docs:build": "vuepress build docs --clean-cache",
+    "preview": "anywhere -d docs/.vuepress/dist",
     "check": "lychee -c lychee.toml -f markdown docs",
     "test": "rm -rf coverage && vitest"
   },
@@ -19,6 +20,7 @@
     "@vuepress/plugin-search": "2.0.0-beta.46",
     "@vuepress/theme-default": "2.0.0-beta.46",
     "@vuepress/utils": "2.0.0-beta.46",
+    "anywhere": "^1.6.0",
     "markdown-it": "^13.0.1",
     "tsconfig-vuepress": "^0.2.1",
     "typescript": "^4.7.2",
