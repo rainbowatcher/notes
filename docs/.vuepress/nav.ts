@@ -109,12 +109,7 @@ export default [
   },
   {
     text: "算法",
-    children: [
-      {
-        text: "数据结构",
-        link: "/algorithm/data-structure/",
-      },
-    ],
+    link: '/algorithm/'
   },
   {
     text: "开发工具",
