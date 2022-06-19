@@ -9,6 +9,10 @@ Git 是用于追踪任何一组文件中的更改的软件，通常用于协调�
 - [如何参与 Tianchi(天池)项目以及如何贡献代码 - QTCN开发网](http://www.qtcn.org/bbs/simple/?t53628.html)
 - [Commit message 和 Change log 编写指南 - 阮一峰](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
 
+## 安装
+
+官方有详细的[安装指南](https://git-scm.com/downloads/)。
+
 ## 什么叫分布式版本控制
 
 首先什么是**版本控制**，我们平时使用电脑在遇到更新文档是通常会用日期来区分文件的版本就像下图这样
