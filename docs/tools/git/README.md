@@ -48,21 +48,21 @@ flowchart LR
 
 subgraph remote
   direction BT
-  D[("远程仓库(Remote Repository)")]
+  D[("远程仓库\n(Remote Repository)")]
 end
 
 subgraph local
   direction TB
-  A>"工作目录(Working Directory)"]
-  B[("暂存区(Stage|Index)")]
-  C[("存储库(Repository)")]
+  A>"工作目录\n(Working Directory)"]
+  B[("暂存区\n(Stage|Index)")]
+  C[("存储库\n(Repository)")]
 end
 
 A-->|add|B
 B-->|commit|C
 C-->|push|D
-D-->|"fetch|clone"|C
 C-->|checkout|A
+D-->|"fetch\clone"|C
 D-->|pull|A
 ```
 

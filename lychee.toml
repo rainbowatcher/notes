@@ -29,7 +29,7 @@ max_redirects = 5
 # user_agent = "curl/7.71.1"
 
 # Website timeout from connect to response finished
-timeout = 60
+timeout = 15
 
 # Comma-separated list of accepted status codes for valid links.
 # Omit to accept all response types.
@@ -53,7 +53,7 @@ headers = []
 ### Exclusions
 ###
 # Exclude URLs from checking (supports regex)
-exclude = ["godaddy"]
+exclude = ["godaddy", "cyc2018"]
 
 # Exclude URLs contained in a file from checking
 # If a file named `.lycheeignore` exists in the current working directory,

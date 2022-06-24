@@ -90,19 +90,23 @@ export default [
     ],
   },
   {
-    text: "开发框架",
+    text: "生态",
     children: [
       {
-        text: "前端",
+        text: "Vue",
         children: [
           {
             text: "Vue",
-            link: "/framework/front-end/vue/",
+            link: "/zoology/vue/vue/",
           },
         ],
       },
       {
-        text: "后端",
+        text: "Java",
+        children: [],
+      },
+      {
+        text: "大数据",
         children: [],
       },
     ],
