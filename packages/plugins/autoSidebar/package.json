@@ -1,0 +1,25 @@
+{
+  "name": "@rainbowatcher/vitepress-plugin-auto-sidebar",
+  "version": "0.0.1",
+  "description": "",
+  "author": "rainbowatcher <wwh33516@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "vitepress",
+    "vitepress-plugin",
+    "auto-sidebar"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "build-watch": "tsup --watch",
+    "clean": "rimraf lib",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "fast-glob": "^3.2.12",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^13.0.1"
+  }
+}

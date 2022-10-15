@@ -110,13 +110,14 @@ details.addEventListener("toggle", (event) => {
   <option>Angular</option>
 </datalist>
 <output id="output"></output>
-<script>
-  let input = document.getElementById("favorite-language");
-  input.addEventListener("input", (event) => {
-    let output = document.getElementById("output");
-    output.innerHTML = "你最喜欢的前端框架是：" + event.target.value;
-  });
-</script>
+```
+
+```js
+const input = document.getElementById('favorite-language')
+input.addEventListener('input', (event) => {
+  const output = document.getElementById('output')
+  output.innerHTML = `你最喜欢的前端框架是：${event.target.value}`
+})
 ```
 
 :::

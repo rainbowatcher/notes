@@ -1,0 +1,54 @@
+{
+  "name": "@rainbowatcher/theme-sika",
+  "version": "0.0.1",
+  "description": "Vitepress theme Sika",
+  "author": "Evan You",
+  "license": "MIT",
+  "homepage": "https://rainbowatcher.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rainbowatcher/rainbowatcher.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rainbowatcher/rainbowatcher.github.io/issues"
+  },
+  "keywords": [
+    "vitepress",
+    "vitepress-theme",
+    "sika",
+    "vitepress-theme-sika"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./config": "./src/vitepress/config/baseConfig.js"
+  },
+  "main": "src/index.ts",
+  "files": [
+    "src",
+    "types"
+  ],
+  "scripts": {
+    "type": "pnpm -w run lint && tsc --noEmit"
+  },
+  "dependencies": {
+    "@docsearch/css": "^3.2.1",
+    "@docsearch/js": "^3.2.1",
+    "@vueuse/core": "^9.3.0",
+    "body-scroll-lock": "^3.1.5",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@mdit-vue/types": "^0.11.0",
+    "@types/body-scroll-lock": "^3.1.0",
+    "@types/estree": "^1.0.0",
+    "sass": "^1.55.0",
+    "vue": "^3.2.41"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  }
+}

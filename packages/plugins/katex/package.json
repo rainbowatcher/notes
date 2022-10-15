@@ -1,0 +1,23 @@
+{
+  "name": "@rainbowatcher/markdown-it-katex",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsup",
+    "build-watch": "tsup --watch"
+  },
+  "dependencies": {
+    "katex": "^0.16.2",
+    "markdown-it": "^13.0.1"
+  },
+  "devDependencies": {
+    "@types/katex": "^0.14.0",
+    "@types/markdown-it": "^12.2.3"
+  }
+}

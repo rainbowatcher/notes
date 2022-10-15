@@ -1,0 +1,17 @@
+@import "_variables";
+
+@mixin transition($value) {
+  transition: $value;
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -o-transition: $value;
+  -ms-transition: $value;
+}
+
+@mixin transform($value) {
+  transform: $value;
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -o-transform: $value;
+  -ms-transform: $value;
+}

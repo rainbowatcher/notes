@@ -1,4 +1,17 @@
-# 计算机组成与体系结构
+---
+layout: Post
+title: 表示数值的方法-进制转换
+subtitle: 
+date: 2022-08-12
+permalinkPattern: /post/:year/:month/:day/:slug/
+headerImage: /img/computer.png
+useHeaderImage: true
+headerMask: rgba(0, 0, 0, .4)
+hide: false
+tags: [Computer]
+---
+
+# 表示数值的方法-进制转换
 
 ## 数的表示
 
@@ -56,9 +69,9 @@ $$
 & 2 | 11 &\to 1 \\
 & 2 | 5  &\to 1 \\
 & 2 | 2  &\to 0 \\
-& 1
-\end{aligned}\\
-\text{结果：}1011110
+& 1 \\
+&\text{结果：} &1011110
+\end{aligned}
 $$
 
 ### 二进制转换其他进制
@@ -66,27 +79,22 @@ $$
 八进制本质是将二进制数字分成三个一组，十进制则是将其分为 4 个数一组。
 
 $$
-\begin{array}{l}
-\text{二进制}
-& \color {navy} 100
+\begin{array}{ccccc}
+& \text{二进制}
+& \color {cyan} 100
 & \color {green} 101
 & 001\\
-\text{八进制}
-& \color {navy} 4
+& \text{八进制}
+& \color {cyan} 4
 & \color {green} 5
-& 1
-\end{array}
-$$
-
-$$
-\begin{array}l
-\text{二进制}
-&\color {navy} 0001
-&\color {green} 0010
-&1001\\
-\text{十进制}
-&\color {navy} 1
-&\color {green} 2
-&9
+& 1\\
+& \text{二进制}
+& \color {cyan} 0001
+& \color {green} 0010
+& 1001\\
+& \text{十进制}
+& \color {cyan} 1
+& \color {green} 2
+& 9
 \end{array}
 $$

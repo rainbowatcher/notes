@@ -1,5 +1,12 @@
 # 系统安装
 
+## 刻录软件
+
+| 软件名       | 描述                                        |
+| ------------ | ------------------------------------------- |
+| 镜像包       | 系统镜像 iso 文件                           |
+| U 盘烧录工具 | Win32DiskImager、UltraISO、rufus、Etcher 等 |
+
 参考资料：
 
 - [安装 Ubuntu Linux 分区的推荐方案和方法](https://www.cnblogs.com/sinferwu/p/7953853.html)

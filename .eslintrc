@@ -1,0 +1,15 @@
+{
+  "extends": "@antfu",
+  "rules": {
+    "vue/custom-event-name-casing": [
+      "error",
+      "kebab-case",
+      {
+        "ignores": []
+      }
+    ]
+  },
+  "ignorePatterns": [
+    "lib"
+  ]
+}
