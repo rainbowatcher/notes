@@ -6,9 +6,7 @@ const fm = useData()
 
 <template>
   <a class="VPNavBarTitle" href="/">
-    <slot name="navbar-title">
-      {{ fm.site.value.title }}
-    </slot>
+    {{ fm.site.value.title }}
   </a>
 </template>
 
@@ -19,13 +17,15 @@ const fm = useData()
   padding-top: 1px;
   height: var(--vt-nav-height);
   transition: opacity 0.25s;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .VPNavBarTitle:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
-.logo {
+/* .logo {
   position: relative;
 }
 
@@ -36,5 +36,5 @@ const fm = useData()
 .text {
   font-size: 16px;
   font-weight: 500;
-}
+} */
 </style>

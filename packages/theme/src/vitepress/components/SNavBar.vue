@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import VPNavBarTitle from './VPNavBarTitle.vue'
+import SNavBarTitle from './SNavBarTitle.vue'
 import VPNavBarSearch from './VPNavBarSearch.vue'
-import VPNavBarMenu from './VPNavBarMenu.vue'
+import SNavBarMenu from './SNavBarMenu.vue'
 import VPNavBarAppearance from './VPNavBarAppearance.vue'
 import VPNavBarSocialLinks from './VPNavBarSocialLinks.vue'
 import VPNavBarExtra from './VPNavBarExtra.vue'
@@ -15,10 +15,10 @@ defineProps<{
 <template>
   <div class="SNavBar">
     <div class="container">
-      <VPNavBarTitle />
+      <SNavBarTitle />
       <div class="content">
         <VPNavBarSearch class="search" />
-        <VPNavBarMenu class="menu" />
+        <SNavBarMenu class="menu" />
         <VPNavBarAppearance class="appearance" />
         <VPNavBarSocialLinks class="social-links" />
         <VPNavBarExtra class="extra" />

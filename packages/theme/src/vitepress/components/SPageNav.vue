@@ -10,19 +10,18 @@ const { hasSidebar } = useSidebar()
 const { frontmatter } = useData()
 const { config } = useConfig()
 
-function scrollToTop(e: MouseEvent) {
+function scrollToTop() {
   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-  return e
 }
 </script>
 
 <template>
-  <div v-if="hasSidebar" class="VPLocalNav">
+  <div v-if="hasSidebar" class="SPageNav">
     <button
       class="menu"
       :aria-expanded="open"
       aria-controls="VPSidebarNav"
-      :onClick="$emit('open-menu')"
+      @click="$emit('open-menu')"
     >
       <VTIconAlignLeft class="menu-icon" />
       <span class="menu-text">{{ config.i18n?.menu || 'Menu' }}</span>
@@ -38,7 +37,7 @@ function scrollToTop(e: MouseEvent) {
 </template>
 
 <style scoped>
-.VPLocalNav {
+.SPageNav {
   position: sticky;
   top: var(--vt-banner-height, 0px);
   left: 0;
@@ -52,7 +51,7 @@ function scrollToTop(e: MouseEvent) {
 }
 
 @media (min-width: 960px) {
-  .VPLocalNav {
+  .SPageNav {
     display: none;
   }
 }

@@ -1,20 +1,21 @@
 <script lang="ts" setup>
 import { useConfig } from '../../vitepress/composables/config'
 import VTSwitch from './VTSwitch.vue'
-import VTIconSun from './icons/VTIconSun.vue'
-import VTIconMoon from './icons/VTIconMoon.vue'
+import SIconSun from './icons/SIconSun.vue'
+import SIconMoon from './icons/SIconMoon.vue'
 
 const { config } = useConfig()
 
 const storageKey = 'vitepress-theme-appearance'
-const toggle = typeof localStorage !== 'undefined' ? useAppearance() : () => {}
+const toggle = typeof localStorage !== 'undefined' ? useAppearance() : () => { }
 
+// TODO
 function useAppearance() {
   let userPreference = localStorage.getItem(storageKey) || 'auto'
   const query = window.matchMedia('(prefers-color-scheme: dark)')
   const classList = document.documentElement.classList
-  let isDark
-    = userPreference === 'auto' ? query.matches : userPreference === 'dark'
+  const preference = userPreference === 'auto' ? query.matches : userPreference
+  let isDark = preference === 'dark'
   const setClass = (dark: boolean) => classList[dark ? 'add' : 'remove']('dark')
 
   query.onchange = (e) => {
@@ -24,16 +25,9 @@ function useAppearance() {
 
   const toggle = () => {
     setClass((isDark = !isDark))
-    localStorage.setItem(
-      storageKey,
-      (userPreference = isDark
-        ? query.matches
-          ? 'auto'
-          : 'dark'
-        : query.matches
-          ? 'light'
-          : 'auto'),
-    )
+    const a = query.matches ? 'auto' : 'dark'
+    const b = query.matches ? 'light' : 'auto'
+    localStorage.setItem(storageKey, (userPreference = isDark ? a : b))
   }
 
   return toggle
@@ -41,12 +35,8 @@ function useAppearance() {
 </script>
 
 <template>
-  <VTSwitch
-    class="vt-switch-appearance"
-    :aria-label="config.i18n?.ariaDarkMode ?? 'Toggle dark mode'"
-    @click="toggle"
-  >
-    <VTIconSun class="vt-switch-appearance-sun" />
-    <VTIconMoon class="vt-switch-appearance-moon" />
+  <VTSwitch class="vt-switch-appearance" :aria-label="config.i18n?.ariaDarkMode ?? 'Toggle dark mode'" @click="toggle">
+    <SIconSun class="vt-switch-appearance-sun" />
+    <SIconMoon class="vt-switch-appearance-moon" />
   </VTSwitch>
 </template>

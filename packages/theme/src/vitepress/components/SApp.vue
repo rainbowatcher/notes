@@ -3,8 +3,8 @@ import { onMounted, onUnmounted, provide, watchEffect } from 'vue'
 import { VTBackdrop } from '../../core'
 import { useSidebar } from '../composables/sidebar'
 import usePageOffset from '../composables/usePageOffset'
-import VPNav from './VPNav.vue'
-import VPLocalNav from './VPLocalNav.vue'
+import SNav from './SNav.vue'
+import SPageNav from './SPageNav.vue'
 // import VPSkipLink from './VPSkipLink.vue'
 import VPAnnouncer from './VPAnnouncer.vue'
 import VPSidebar from './VPSidebar.vue'
@@ -42,6 +42,8 @@ onUnmounted(() => {
 })
 
 provide('close-sidebar', closeSidebar)
+
+// onUpdated(() => console.log(isSidebarOpen.value))
 </script>
 
 <template>
@@ -49,12 +51,12 @@ provide('close-sidebar', closeSidebar)
     <!-- <VPSkipLink /> -->
     <VTBackdrop class="backdrop" :show="isSidebarOpen" @click="closeSidebar" />
     <slot name="banner" />
-    <VPNav>
+    <SNav>
       <template #navbar-title>
         <slot name="navbar-title" />
       </template>
-    </VPNav>
-    <VPLocalNav :open="isSidebarOpen" @open-menu="openSidebar" />
+    </SNav>
+    <SPageNav :open="isSidebarOpen" @open-menu="openSidebar" />
     <VPSidebar :open="isSidebarOpen">
       <template #top>
         <slot name="sidebar-top" />
@@ -91,11 +93,12 @@ provide('close-sidebar', closeSidebar)
 </template>
 
 <style scoped>
-.VPApp {
+.SApp {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--vt-c-bg);
+  /* background-image: url(/Users/rainb/PrivateSpace/Notes/notes/assets/language/javascript/function-scope.png); */
   transition: background-color 0.5s;
   padding-top: var(--vt-banner-height);
 }
