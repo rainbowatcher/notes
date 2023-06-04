@@ -1,23 +1,27 @@
 {
   "name": "@rainbowatcher/markdown-it-katex",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "license": "ISC",
+  "description": "katex plugin for markdown-it",
+  "author": "rainbowatcher <wwh33516@gmail.com>",
+  "license": "MIT",
   "keywords": [],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "src/*"
+  ],
   "scripts": {
     "clean": "rimraf lib",
-    "build": "tsup",
-    "build-watch": "tsup --watch"
+    "copy": "cpy 'node_modules/katex/dist/*.css' src",
+    "build": "pnpm copy && tsup",
+    "build-watch": "pnpm copy && tsup --watch"
   },
   "dependencies": {
-    "katex": "^0.16.2",
+    "katex": "^0.16.7",
     "markdown-it": "^13.0.1"
   },
   "devDependencies": {
-    "@types/katex": "^0.14.0",
+    "@types/katex": "^0.16.0",
     "@types/markdown-it": "^12.2.3"
   }
 }

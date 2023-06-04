@@ -31,18 +31,18 @@
     "type": "pnpm -w run lint && tsc --noEmit"
   },
   "dependencies": {
-    "@docsearch/css": "^3.2.1",
-    "@docsearch/js": "^3.2.1",
-    "@vueuse/core": "^9.3.0",
+    "@docsearch/css": "^3.4.0",
+    "@docsearch/js": "^3.4.0",
+    "@vueuse/core": "^9.13.0",
     "body-scroll-lock": "^3.1.5",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "@mdit-vue/types": "^0.11.0",
+    "@mdit-vue/types": "^0.12.0",
     "@types/body-scroll-lock": "^3.1.0",
-    "@types/estree": "^1.0.0",
-    "sass": "^1.55.0",
-    "vue": "^3.2.41"
+    "@types/estree": "^1.0.1",
+    "sass": "^1.62.1",
+    "vue": "^3.3.4"
   },
   "pnpm": {
     "peerDependencyRules": {
