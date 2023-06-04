@@ -1,4 +1,6 @@
-const navbarConfig = [
+import type { DefaultTheme } from 'vitepress/theme'
+
+const navbarConfig: DefaultTheme.NavItem[] = [
   {
     text: '计算机',
     items: [
@@ -143,5 +145,24 @@ const navbarConfig = [
     ],
   },
 ]
+
+// const navbarConfig: DefaultTheme.NavItem[] = [
+//   {
+//     text: '博客',
+//     link: '/posts',
+//   },
+//   {
+//     text: '笔记',
+//     link: '/notes',
+//   },
+//   {
+//     text: '标签',
+//     link: '/tags',
+//   },
+//   {
+//     text: '链接',
+//     link: '/links',
+//   },
+// ]
 
 export default navbarConfig

@@ -1,16 +1,14 @@
 // ref: https://github.com/Renovamen/vuepress-theme-gungnir/blob/main/packages/plugins/katex/src/node/markdown-it-katex.ts
-import * as Katex from 'katex'
+import katex from 'katex'
 import type { KatexOptions } from 'katex'
-import type * as MarkdownIt from 'markdown-it'
-import type * as StateBlock from 'markdown-it/lib/rules_block/state_block'
-import type * as StateInline from 'markdown-it/lib/rules_inline/state_inline'
+import type MarkdownIt from 'markdown-it'
+import type StateBlock from 'markdown-it/lib/rules_block/state_block'
+import type StateInline from 'markdown-it/lib/rules_inline/state_inline'
 import type Token from 'markdown-it/lib/token'
 import { escapeHtml } from 'markdown-it/lib/common/utils'
 
-const isValidDelim = (
-  state: StateInline,
-  pos: number,
-): { canOpen: boolean; canClose: boolean } => {
+function isValidDelim(state: StateInline,
+  pos: number): { canOpen: boolean; canClose: boolean } {
   const prevChar = pos > 0 ? state.src.charCodeAt(pos - 1) : -1
   const nextChar = pos + 1 <= state.posMax ? state.src.charCodeAt(pos + 1) : -1
 
@@ -37,7 +35,7 @@ const isValidDelim = (
   }
 }
 
-const mathInline = (state: StateInline, silent?: boolean): boolean => {
+function mathInline(state: StateInline, silent?: boolean): boolean {
   let match, token, res, pos
 
   if (state.src[state.pos] !== '$')
@@ -116,12 +114,10 @@ const mathInline = (state: StateInline, silent?: boolean): boolean => {
   return true
 }
 
-const mathBlock = (
-  state: StateBlock,
+function mathBlock(state: StateBlock,
   start: number,
   end: number,
-  silent: boolean,
-): boolean => {
+  silent: boolean): boolean {
   let firstLine
   let lastLine
   let next
@@ -182,10 +178,8 @@ const mathBlock = (
   return true
 }
 
-const katex = (
-  md: MarkdownIt,
-  options: KatexOptions = { throwOnError: false },
-): void => {
+const katexPlugin: MarkdownIt.PluginWithOptions<KatexOptions> = (md: MarkdownIt,
+  options: KatexOptions = { throwOnError: false }): void => {
   const katexOptions: KatexOptions = { ...options, output: 'html' }
 
   // set KaTeX as the renderer for markdown-it-simplemath
@@ -193,7 +187,7 @@ const katex = (
     katexOptions.displayMode = false
 
     try {
-      return Katex.default.renderToString(tex, katexOptions)
+      return katex.renderToString(tex, katexOptions)
     }
     catch (error) {
       if (katexOptions.throwOnError)
@@ -209,7 +203,7 @@ const katex = (
     katexOptions.displayMode = true
 
     try {
-      return `<p>${Katex.default.renderToString(tex, katexOptions)}</p>`
+      return `<p>${katex.renderToString(tex, katexOptions)}</p>`
     }
     catch (error) {
       if (katexOptions.throwOnError)
@@ -239,4 +233,4 @@ const katex = (
   md.renderer.rules.mathBlock = blockRenderer
 }
 
-export default katex
+export default katexPlugin

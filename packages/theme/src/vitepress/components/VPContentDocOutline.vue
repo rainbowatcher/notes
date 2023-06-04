@@ -15,7 +15,7 @@ const filteredHeaders = computed(() => {
   return resolveHeaders(page.value.headers, filterHeaders)
 })
 
-const handleClick = (e: MouseEvent) => {
+function handleClick(e: MouseEvent) {
   const { target: el } = e
   const id = `#${(el as HTMLAnchorElement).href!.split('#')[1]}`
   const heading = document.querySelector(id) as HTMLAnchorElement

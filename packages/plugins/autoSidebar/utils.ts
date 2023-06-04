@@ -3,7 +3,7 @@ import { sync } from 'fast-glob'
 import MarkdownIt from 'markdown-it'
 import matter from 'gray-matter'
 
-export const hasSubDirs = (dir: string): boolean => {
+export function hasSubDirs(dir: string): boolean {
   return (
     sync(`${dir}/*`, {
       onlyDirectories: true,

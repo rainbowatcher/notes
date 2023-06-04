@@ -19,7 +19,7 @@ export function normalizeLink(url: string): string {
 
   const { pathname, search, hash } = new URL(url, 'http://vuejs.org')
   return withBase(
-    pathname.endsWith('/') || pathname.endsWith('.html')
+    (pathname.endsWith('/') || pathname.endsWith('.html'))
       ? url
       : `${pathname.replace(/(\.md)?$/, '.html')}${search}${hash}`,
   )

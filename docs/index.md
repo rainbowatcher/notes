@@ -1,7 +1,6 @@
 ---
 layout: home
 title: Rainbow Tree Hole
-sidebar: true
 hero:
   name: Tree Hole
   text: For Rainbow Watcher

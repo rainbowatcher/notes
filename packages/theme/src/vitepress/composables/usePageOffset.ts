@@ -1,7 +1,7 @@
 import { useLocalStorage, useWindowScroll } from '@vueuse/core'
 import { onMounted, watch } from 'vue'
 
-const usePageOffset = (key: string, _options = {}) => {
+function usePageOffset(key: string, _options = {}) {
   const { y } = useWindowScroll()
 
   let offset = useLocalStorage(key, y)

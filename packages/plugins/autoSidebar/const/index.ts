@@ -1,4 +1,4 @@
-import path from 'path'
+import path from 'node:path'
 
 export const DEFAULT_IGNORED_FILES = ['.DS_Store']
 

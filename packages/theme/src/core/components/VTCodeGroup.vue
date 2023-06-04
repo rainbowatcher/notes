@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref, useSlots } from 'vue'
 import { VTCodeGroupTab } from '..'
+
 const activeTabIndex = ref(0)
 const children = useSlots().default?.()
 const tabs = children?.filter(({ type }) => type === VTCodeGroupTab)

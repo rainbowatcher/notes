@@ -12,7 +12,7 @@ watch(
   () => backToTop.value.focus(),
 )
 
-const focusOnTargetAnchor = ({ target }: Event) => {
+function focusOnTargetAnchor({ target }: Event) {
   const el = document.querySelector(
     (target as HTMLAnchorElement).hash!,
   ) as HTMLAnchorElement

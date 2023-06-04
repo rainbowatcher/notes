@@ -5,7 +5,7 @@ import { sync } from 'fast-glob'
 import { hasSubDirs, parseMD } from './utils'
 import type { BarOptions } from './types/bar'
 
-const autoSidebarConfig = (options?: BarOptions): DefaultTheme.Sidebar => {
+function autoSidebarConfig(options?: BarOptions): DefaultTheme.Sidebar {
   const basePath = options?.basePath ?? 'docs'
   const sidebarConfig: DefaultTheme.SidebarMulti = {}
 

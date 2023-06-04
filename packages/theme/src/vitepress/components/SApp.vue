@@ -5,6 +5,7 @@ import { useSidebar } from '../composables/sidebar'
 import usePageOffset from '../composables/usePageOffset'
 import SNav from './SNav.vue'
 import SPageNav from './SPageNav.vue'
+
 // import VPSkipLink from './VPSkipLink.vue'
 import VPAnnouncer from './VPAnnouncer.vue'
 import VPSidebar from './VPSidebar.vue'
@@ -27,7 +28,7 @@ watchEffect(() => {
     : undefined
 })
 
-const onEscape = (e: KeyboardEvent) => {
+function onEscape(e: KeyboardEvent) {
   if (e.key === 'Escape' && isSidebarOpen.value) {
     closeSidebar()
     triggerElement?.focus()
@@ -44,6 +45,7 @@ onUnmounted(() => {
 provide('close-sidebar', closeSidebar)
 
 // onUpdated(() => console.log(isSidebarOpen.value))
+// const { frontmatter: fm } = useData()
 </script>
 
 <template>
