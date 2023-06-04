@@ -17,7 +17,7 @@
     "check": "lychee -c lychee.toml -f markdown docs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "preview": "pnpm build && serve docs/.vitepress/dist --open",
+    "preview": "pnpm build && serve docs/.vitepress/dist",
     "type": "pnpm --parallel -r --stream type",
     "up": "taze -rwI -x '@rainbowatcher'"
   },
