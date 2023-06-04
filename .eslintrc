@@ -10,6 +10,7 @@
     ]
   },
   "ignorePatterns": [
+    ".vitepress",
     "lib"
   ]
 }
